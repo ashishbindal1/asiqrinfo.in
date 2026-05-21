@@ -1,0 +1,388 @@
+<!--ASI Heritage QR System Copyright © Ashish Bindal Licensed under GPL v3-->
+<!--Copyright Reserved by SoftTech-->
+<!--Code Designed by © Ashish Bindal on 26/12/2025-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Se Cathedral</title>
+    <link rel="stylesheet" href="style_file.css" />
+
+    <!-- SITE ICON -->
+    <link rel="icon" href="Image_Se_Cathedral/Museum.jpg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="Image_Se_Cathedral/Museum.jpg"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- OUTER WHITE BACKGROUND -->
+    <div class="page-background">
+      <!-- INNER PARCHMENT BACKGROUND CONTAINER -->
+      <div class="parchment-container">
+        <div class="language-dropdown">
+          <select class="lang-select" onchange="setLanguage(this.value)">
+            <option value="">🌐 Select Language</option>
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="kok">कोंकणी</option>
+          </select>
+        </div>
+
+        <!-- HEADER -->
+        <header>
+          <h1
+            class="lang"
+            data-en="Se Cathedral"
+            data-hi="से कैथेड्रल"
+            data-kok="से कैथेड्रल"
+          >
+            Se Cathedral
+          </h1>
+          <p
+            class="subtitle lang"
+            data-en="A UNESCO World Heritage Monument, Old Goa"
+            data-hi="यूनेस्को विश्व धरोहर स्मारक, पुराना गोवा"
+            data-kok="युनेस्को संवसारीक दायज स्मारक, पोरणें गोंय"
+          >
+            A UNESCO World Heritage Monument, Old Goa
+          </p>
+        </header>
+
+        <!--ASI STYLE IMAGE SLIDER -->
+        <div class="slider-container">
+          <div class="asi-slider">
+            <div class="slide fade">
+              <img src="Image_Se_Cathedral/1.webp" alt="banner" />
+            </div>
+
+            <!--<div class="slide fade">
+              <img src="#nil" alt="banner" />
+            </div>
+
+            <div class="slide fade">
+              <img src="#nil" alt="banner" />
+            </div>-->
+
+            <!-- Next / Prev Arrows -->
+            <!--<a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>-->
+          </div>
+
+          <!-- Dots -->
+          <!--<div class="slider-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>-->
+        </div>
+
+        <!-- Small Button Group -->
+        <div class="small-btn-group">
+          <button class="small-btn" onclick="showSection('aboutSection')">
+            About
+          </button>
+          <!--<button class="small-btn" onclick="showSection('pdfSection')">
+            Brochure
+          </button>-->
+          <button class="small-btn" onclick="showSection('gallerySection')">
+            Gallery
+          </button>
+          <button class="small-btn" onclick="showSection('videoSection')">
+            Video
+          </button>
+          <!--<button class="small-btn" onclick="showSection('audioSection')">
+            Audio
+          </button>-->
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <section id="aboutSection" class="tab-content" style="display: none">
+          <div
+            class="lang"
+            data-en="<p>
+                    One of the largest churches in India; this monument ad-measures 76.2 m in length, 55.16 m wide and 
+                    35.56 m in height. It has eight chapels and six altars. Although the work of the church was started in 
+                    1562 C.E, due to various problems it could be completed only in 1652 C.E.  The church had two towers out
+                     of which one fell down in 1776 C.E.</p>
+
+                     <p>The façade has Corinthian columns and triangular pediments. There is an inscription (with tiara and 
+                      keys being the insignia of the Pope) on the triangular pediment which reads as:<br>
+                    “ In the reign of the very Catholic King Dom Sebastiao this cathedral was ordered to be erected in the year 
+                    of our Lord 1652, the Archbishop and Primates being the Administrators. The Catholic King his successors ordered 
+                    it to be continued at the cost of their Royal Treasury up to the time of the present Archbishop Primate Dom Frie 
+                    Francisco dos Martyres, and Viceroy of this State…”</p>
+
+                     <p>Inside the nave and below the pier supporting the choir are two marble basins having the statue of St. Francis 
+                      Xavier. While the main altar is dedicated to St. Catherine of Alexandria, the side altars are those of St. Peter, 
+                      Our Lady of Doloures, Our Lady of three necessities, Our Lady of Hope and Our Lady of Sorrows. The chapels on the 
+                      right side are dedicated to St. Anthony, St. Bernard, the Cross of Miracles, Holy Ghost, while those on the left 
+                      are dedicated to Our Lady of Virtues, St. Sebastian, the Blessed sacrament and Our Lady of Life. The Cross of 
+                      Miracles and Blessed Sacrament are provided with intricately carved wooden filigree work.</p>
+
+                    <p>The transept altars on the right-side of the cathedral belong to St. Joseph, Nossa Senhora das Dares, and St. 
+                      Peter respectively while those on the left side are of Nossa Senhora de Angustia, St. George, and Nossa Senhora 
+                      d’Esperanca respectively. There are several paintings displayed on the inner walls of the Cathedral, the most 
+                      noteworthy among which is a large portrait of St. Christopher crossing a river with a staff in one hand and 
+                      infant Jesus seated on his shoulders.</p>"
+            data-hi="<p>
+              भारत के सबसे बड़े गिरजाघरों में से एक, यह स्मारक 76.2 मीटर लंबा, 55.16 मीटर चौड़ा तथा 35.56 मीटर ऊँचा है। इसमें आठ प्रार्थनालय और छह वेदियाँ 
+              हैं। यद्यपि इस चर्च का निर्माण कार्य 1562 ईस्वी में प्रारंभ हुआ था, परंतु विभिन्न समस्याओं के कारण यह 1652 ईस्वी में ही पूर्ण हो सका। इस चर्च में दो मीनारें थीं, 
+              जिनमें से एक 1776 ईस्वी में गिर गई। 
+            </p>
+            
+            <p>
+              मुख्य मुखभाग में कोरिंथियन स्तंभ तथा त्रिकोणीय पेडिमेंट बने हुए हैं। त्रिकोणीय पेडिमेंट पर एक अभिलेख अंकित है (जिस पर पोप के प्रतीक चिह्न—ताज [टियारा] 
+              और चाबियाँ—उकेरी गई हैं), जो इस प्रकार है :<br>
+              “ कैथोलिक राजा डोम सेबास्तियाओ के शासनकाल में, हमारे प्रभु के वर्ष 1652 में इस कैथेड्रल के निर्माण का आदेश दिया गया, जब आर्चबिशप और प्राइमेट इसके
+               प्रशासक थे। कैथोलिक राजा के उत्तराधिकारियों ने शाही कोष से इसके निर्माण कार्य काे निरंतर आगे बढ़ाने का आदेश दिया, जो वर्तमान आर्चबिशप प्राइमेट डोम फ्रे 
+               फ्रांसिस्को दोस मार्टिर्स तथा इस राज्य के वायसराय के समय तक जारी रहा… ”
+            </p>
+            
+            <p>
+              नेव (मुख्य सभागृह) के भीतर तथा क्वायर को सहारा देने वाले स्तंभ के नीचे दो संगमरमर के कुंड हैं, जिनमें सेंट फ्रांसिस ज़ेवियर की प्रतिमा स्थापित है। जहाँ मुख्य वेदी 
+              सेंट कैथरीन ऑफ़ अलेक्ज़ान्ड्रिया को समर्पित है, वहीं पार्श्व वेदियाँ सेंट पीटर, लेडी ऑफ़ डोलोर्स, लेडी ऑफ़ थ्री नेसेसिटीज़, लेडी ऑफ़ होप तथा लेडी ऑफ़ सॉरोस को 
+              समर्पित हैं।दाहिनी ओर स्थित प्रार्थनालय सेंट एंथनी, सेंट बर्नार्ड, क्रॉस ऑफ़ मिरैकल्स तथा होली घोस्ट को समर्पित हैं, जबकि बाईं ओर के प्रार्थनालय लेडी ऑफ़ वर्च्यूज़, 
+              सेंट सेबास्टियन, ब्लेैस्ड सैक्रामेंट तथा लेडी ऑफ़ लाइफ को समर्पित हैं। क्रॉस ऑफ़ मिरैकल्स और ब्लेस्ड सैक्रामेंट के प्रार्थनालय में बारीकी से की गई सुंदर लकड़ी की 
+              जालीदार नक्काशी की गई है। 
+            </p>
+
+            <p>
+              कैथेड्रल के दाहिनी ओर स्थित ट्रान्सेप्ट की वेदियाँ क्रमशः सेंट जोसेफ, नोसा सेन्होरा दास डोरेस तथा सेंट पीटर को समर्पित हैं, जबकि बाईं ओर की वेदियाँ क्रमशः 
+              नोसा सेन्होरा दे अंगुस्तिया, सेेंट जॉर्ज तथा नोसा सेन्होरा द’एस्पेरांसा को समर्पित हैं। कैथेड्रल की भीतरी दीवारों पर अनेक चित्र प्रदर्शित हैं, जिनमें सबसे उल्लेखनीय 
+              सेंट क्रिस्टोफर का एक विशाल चित्र है, जिसमें वे एक हाथ में दंड लिए नदी पार करते हुए दर्शाए गए हैं और उनके कंधों पर बाल यीशु विराजमान हैं। 
+            </p>"
+            data-kok="<p>भारतांतली ही एक व्हडली इगर्ज; ह्या स्मारकाची लांबाय 76.2 मिटर, रुंदाय 55.16 मिटर आनी उंचाय 35.56 मिटर इतलीं आसा. तातूंत आठ 
+              कपेलां आनी स आल्तार आसात. इगर्जेचें काम जरी इ. स. 1562 वर्सा सुरू जालें तरी वेगवेगळ्या समस्यांक लागून इ. स. 1652 वर्साच तें पुराय जावंक पावलें. 
+              इगर्जेक दोन बुरूज आशिल्ले, तातूंतलो एक इ. स. 1776 त कोंसळून पडलो.</p>
+                        
+                        <p>मुखामळाचेर कोरिंथियन स्तंभ आनी त्रिकोणी पॅडिमॅण्ट्स आसात. त्रिकोणी पॅडिमॅण्टाचेर एक शिलालेख आसा (मुकूट आनी चावी ही पापसायबाची खूण 
+                          आशिल्ली) जातूंत अशें बरयलां : <br>
+                          “ कॅथॉलीक राजा डॉम सेबास्तियांव हाच्या काळांत आमच्या देव बापाच्या 1652 वर्सा हें कॅथेड्राल उबारपाचो आदेश दिल्लो, जाचे बिस्मसायब आनी प्रिमेट हे 
+                          प्रशासक आशिल्ले. कॅथलीक राजाच्या उत्तराधिकार्‍यांनी आपल्या शाही खजिन्याच्या खर्चान सद्याचो बिस्मसाब प्रिमेट डॉम फ्री फ्रान्सिस्को दोस मारत्रीस आनी 
+                          ह्या राज्याचो व्हायसरॉय मेरेन तें चालू दवरपाचो आदेश दिला...”</p>
+
+                          <p>मुखेल भागा भितर (नेव) आनी गायन मंडळाक आदार दिवपी खांब्या सकयल दोन संगमरवरी बेसीनांत सां फ्रांन्सिस शावियर हाचो पुतळो आसा. मुखेल 
+                            आल्तार अलेक्झांड्रियाच्या सांत कॅथरीनाक समर्पीत केल्या जाल्यार बाजूचो आल्तार सां पेद्रू, अवर लेडी ऑफ डॉलर्स, अवर लेडी ऑफ थ्री नेसेसीटीज, अवरलेडी 
+                            ऑफ होप आनी अवर लेडी ऑफ सॉरोव्हज हांकां समर्पीत केल्यात. उजवे वटेनचीं कपेलां सांत आंतोन, सांत बेर्नाद, मिलाग्रीचो खुरीस, होली घोस्ट हांकां समर्पीत 
+                            केल्यात, जाल्यार दावे वटेनचीं कपेलां अवर लेडी ऑफ व्हर्च्यूज, सांत सेबास्तियान, पवित्र साक्रिस्ती आनी अवर लेडी ऑफ लायफ हांकां समर्पीत केल्यात. मिलाग्रीचो 
+                            खुरीस आनी पवित्र साक्रिस्ती हांचेर बारीकसाणेन कोरांतिल्ले लांकडी फिलग्रीचे काम केलां. </p>
+
+                            <p>कॅथेड्रालाचे उजवे वटेन आशिल्ल्यो ट्रान्सेप्ट आल्तार अनुक्रमान सां जुजे, नोस्सा सिन्होरा दारीस आनी सां पेद्रू हांच्यो आसात जाल्यार दावे वटेन आशिल्ले आल्तार 
+                              अनुक्रमान नोसा सिन्होरा आगुस्तिया, सांत जॉर्ज आनी नोसा सिन्होरा दे इस्पेरान्सा हांच्यो आसात. कॅथेड्रालाच्या भितरल्या वण्टींचेर जायतीं चित्रां दाखयल्यांत, तातूंतलें 
+                              सगळ्यांत उल्लेखनीय म्हणल्यार सांत क्रिस्टोफर एका हातांत काठी आनी बाळक जेजूक खांदार बसोवन न्हंय हुंपता, तें आसा. </p>"
+          ></div>
+
+          <div class="small-button-group">
+            <button
+              class="small-btn"
+              onclick="showSection('referencesSection')"
+            >
+              References
+            </button>
+          </div>
+        </section>
+        <section
+          id="referencesSection"
+          class="tab-content"
+          style="display: none"
+        >
+          <p>
+            1. Bhandari Romesh, GOA, Lotus Collection, Roli Books, New Delhi,
+            1999.
+          </p>
+          <p>
+            2. Kamat Pratima, Farar Far, Local Resistance to Colonial Hegemony
+            in Goa 15010-1912, Institute Menezes Braganza, Panaji, Goa, 1999.
+          </p>
+          <p>
+            3. Fonseca Jose Nicolau de, An Historical and Archaeological sketch
+            of city of Goa, 1878.
+          </p>
+          <p>4. Golden Goa, Marg Publication, 1980.</p>
+          <p>
+            5. Nunes Judilia, The Monuments in Old Goa, Agam Kala Prakashan, New
+            Delhi, 1979.
+          </p>
+          <p>6. Perreira Jose, Baroque Goa, Books & Books, New Delhi, 1995.</p>
+          <p>7. Rajagopalan S., Old Goa, New Delhi, 1987.</p>
+          <p>
+            8. Shirodkar P. P., Fortresses and Forts of Goa, Directorate of Art
+            and Culture, Govt.of Goa, 2015.
+          </p>
+        </section>
+
+        <!-- Brochure Section -->
+        <!--<section id="pdfSection" class="tab-content" style="display: none">
+                    <a href="#nil" target="_blank" class="view-pdf-btn">
+            View Brochure
+          </a>
+                </section>-->
+
+        <!-- Gallery Section -->
+        <section id="gallerySection" class="tab-content" style="display: none">
+          <img
+            src="Image_Se_Cathedral/2.webp"
+            class="gallery-img"
+            alt="Gallery image 1"
+          />
+          <img
+            src="Image_Se_Cathedral/3.webp"
+            class="gallery-img"
+            alt="Gallery image 2"
+          />
+          <img
+            src="Image_Se_Cathedral/4.jpeg"
+            class="gallery-img"
+            alt="Gallery image 3"
+          />
+          <img
+            src="Image_Se_Cathedral/5.webp"
+            class="gallery-img"
+            alt="Gallery image 4"
+          />
+        </section>
+
+        <!-- Lightbox For Gallery Section -->
+        <div id="lightbox" class="lightbox" aria-hidden="true">
+          <button class="lb-close" type="button" aria-label="Close">
+            &times;
+          </button>
+
+          <button
+            class="lb-nav lb-prev"
+            type="button"
+            aria-label="Previous image"
+          >
+            &#10094;
+          </button>
+
+          <img id="lightboxImg" class="lb-img" src="" alt="" />
+
+          <button class="lb-nav lb-next" type="button" aria-label="Next image">
+            &#10095;
+          </button>
+
+          <div class="lb-caption">
+            <span id="lbCount"></span>
+          </div>
+        </div>
+
+        <!-- Videos Section -->
+        <section id="videoSection" class="tab-content" style="display: none">
+          <!-- English Video -->
+          <div class="video-wrapper lang-video" data-lang="en">
+            <iframe
+              src="https://www.youtube.com/embed/9myLMIOjszA?si"
+              title="English Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- Hindi Video -->
+          <div
+            class="video-wrapper lang-video"
+            data-lang="hi"
+            style="display: none"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/rmaQbZBKu4A?si"
+              title="Hindi Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- Konkani Video -->
+          <div
+            class="video-wrapper lang-video"
+            data-lang="kok"
+            style="display: none"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/kqZT_r62Dt0?si"
+              title="Konkani Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+			<div class="lang" data-en="<h2>Video with supportive Sign Language</h2>"></div>
+        </section>
+
+        <!--Audio Section-->
+        <!--<section id="audioSection" class="tab-content" style="display: none">
+          <audio
+            id="audio-en"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source src="Audio English Link" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+
+          <audio
+            id="audio-hi"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source
+              src="Audio Hindi Link"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+
+          <audio
+            id="audio-kok"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source src="Audio Konkani Link" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </section>-->
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+          <div class="footer-left">
+            <img
+              src="Image_Se_Cathedral/asi_logo.jpg"
+              alt="ASI Logo"
+              class="asi-footer-logo"
+            />
+          </div>
+          <p
+            class="lang"
+            data-en="© Superintending Archaeologist, ASI Goa Circle | All Rights Reserved"
+            data-hi="© अधीक्षण पुरातत्वविद्, भारतीय पुरातत्व सर्वेक्षण, गोवा मंडल | सर्वाधिकार सुरक्षित"
+            data-kok="© अधीक्षण पुरातत्वविद्, भारतीय पुरातत्व सर्वेक्षण, गोंय मंडळ | सर्व हक्क राखीव"
+          >
+            © Superintending Archaeologist, ASI Goa Circle | All Rights Reserved
+          </p>
+        </footer>
+      </div>
+      <!-- parchment-container end -->
+    </div>
+    <!-- page-background end -->
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>
