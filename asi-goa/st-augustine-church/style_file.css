@@ -1,0 +1,394 @@
+/*ASI Heritage QR System Copyright © Ashish Bindal Licensed under GPL v3*/
+/*Copyright Reserved by SoftTech*/
+/*Code Designed by © Ashish Bindal on 26/12/2025*/
+
+/* Outer white background */
+.page-background {
+    background: #ffffff;
+    padding: 30px 15px;
+    min-height: 100vh;
+}
+/* INNER PARCHMENT CONTAINER */
+.parchment-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 30px;
+    background: #f3e6d4;
+    background-image: url("Image_St_Augustine_Church/Parchmet_BG.jpg"), radial-gradient(circle at top left, rgba(255, 255, 255, 0.45), transparent 55%), radial-gradient(circle at bottom right, rgba(222, 196, 164, 0.6), transparent 55%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 18px;
+    /*🔥FIXEDBROWNBORDER(NOWALWAYSVISIBLE)*/
+    outline: 4px solid #a47846 !important;
+    outline-offset: -4px !important;
+    border: none !important;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15), 0 6px 18px rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+/* SECTION CONTENT STYLING INSIDE PARCHMENT */
+.parchment-container .content,
+.parchment-container .page-header,
+.parchment-container .simple-tabs,
+.parchment-container .gallery-section,
+.parchment-container .references-section,
+.parchment-container .hindi-content {
+    background: none;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(1px);
+    box-shadow: none;
+    backdrop-filter: none;
+}
+
+
+/* Slider outer Container */
+
+.slider-container {
+    width: 100%;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+
+/* Rounded parchment-style frame background */
+
+.asi-slider {
+    position: relative;
+    height: relative;
+    /*adjustifneeded*/
+    overflow: hidden;
+    background: none;
+    /* behind transparent areas */
+}
+
+
+/* Individual slide */
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Slide image – zoom-out style */
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* zoom-out effect */
+    border-radius: 16px;
+}
+
+
+/* Fade animation */
+
+.fade {
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 12px 18px;
+    color: #4b3621;
+    font-weight: bold;
+    font-size: 26px;
+    transition: 0.3s;
+    border-radius: 50%;
+    user-select: none;
+    background: rgba(255, 248, 231, 0.8);
+    transform: translateY(-50%);
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    background: rgba(255, 240, 210, 1);
+}
+
+
+/* Dots */
+
+.slider-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    background-color: #d3b998;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.4s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #a47846;
+}
+
+
+/* Small BUTTON GROUP */
+
+.language-dropdown {
+    display: flex;
+    justify-content: flex-end;
+    /* right aligned */
+    margin: 20px 0;
+}
+
+.lang-select {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+
+/* Mobile friendly */
+
+@media (max-width: 600px) {
+    .language-dropdown {
+        justify-content: center;
+    }
+}
+
+.small-btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+
+/* Small Buttons */
+
+.small-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    background: #a47846;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.small-btn:hover {
+    background: #8b6238;
+    transform: translateY(-2px);
+}
+
+
+/* Tab content boxes */
+
+.tab-content {
+    margin-top: 20px;
+}
+
+
+/* Gallery image styling */
+
+.gallery-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/* Lightbox overlay */
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lb-img {
+    max-width: 92vw;
+    max-height: 85vh;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.lb-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 40px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.lb-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: #fff;
+    font-size: 34px;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.lb-prev {
+    left: 14px;
+}
+
+.lb-next {
+    right: 14px;
+}
+
+.lb-caption {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+
+/* Mobile: bigger tap areas */
+
+@media (max-width: 600px) {
+    .lb-nav {
+        font-size: 30px;
+        padding: 12px 16px;
+    }
+    .lb-close {
+        font-size: 44px;
+    }
+}
+
+
+/*Pdf Section*/
+
+.view-pdf-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #a47846;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.view-pdf-btn:hover {
+    background: #8f6235;
+    transform: translateY(-2px);
+}
+
+
+/* Video Section*/
+
+.video-wrapper {
+    max-width: 800px;
+    margin: 0;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 450px;
+}
+
+@media (max-width: 600px) {
+    .video-wrapper iframe {
+        height: 220px;
+    }
+}
+
+
+/* HEADINGS */
+
+.parchment-container h1,
+.parchment-container h2,
+.parchment-container h3 {
+    color: #4b3621 !important;
+}
+
+
+/* BASIC TEXT COLOR */
+
+.parchment-container p,
+.parchment-container li {
+    color: #2a1e12;
+}
+
+.site-footer {
+    width: 100%;
+    padding: 10px 15px;
+    /* adjust as needed */
+    display: flex;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.asi-footer-logo {
+    height: 50px;
+    /* small logo */
+    margin-left: 0;
+}

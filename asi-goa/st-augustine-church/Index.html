@@ -1,0 +1,318 @@
+<!--ASI Heritage QR System Copyright © Ashish Bindal Licensed under GPL v3-->
+<!--Copyright Reserved by SoftTech-->
+<!--Code Designed by © Ashish Bindal on 26/12/2025-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>St. Augustine Church</title>
+    <link rel="stylesheet" href="style_file.css" />
+
+    <!-- SITE ICON -->
+    <link rel="icon" href="Image_St_Augustine_Church/Museum.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="Image_St_Augustine_Church/Museum.jpg" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- OUTER WHITE BACKGROUND -->
+    <div class="page-background">
+        <!-- INNER PARCHMENT BACKGROUND CONTAINER -->
+        <div class="parchment-container">
+            <div class="language-dropdown">
+                <select class="lang-select" onchange="setLanguage(this.value)">
+            <option value="">🌐 Select Language</option>
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="kok">कोंकणी</option>
+          </select>
+            </div>
+
+            <!-- HEADER -->
+            <header>
+                <h1 class="lang" data-en="St. Augustine Church" data-hi="सेंट ऑगस्टीन चर्च" data-kok="सेंट ऑगस्टीन चर्च">
+                    St. Augustine Church
+                </h1>
+                <p class="subtitle lang" data-en="A UNESCO World Heritage Monument, Old Goa" data-hi="यूनेस्को विश्व धरोहर स्मारक, पुराना गोवा" data-kok="युनेस्को संवसारीक दायज स्मारक, पोरणें गोंय">
+                    A UNESCO World Heritage Monument, Old Goa
+                </p>
+            </header>
+
+            <!--ASI STYLE IMAGE SLIDER -->
+            <div class="slider-container">
+                <div class="asi-slider">
+                    <div class="slide fade">
+                        <img src="Image_St_Augustine_Church/2.webp" alt="banner" />
+                    </div>
+
+                    <!--<div class="slide fade">
+              <img src="#nil" alt="banner" />
+            </div>
+
+            <div class="slide fade">
+              <img src="#nil" alt="banner" />
+            </div>-->
+
+                    <!-- Next / Prev Arrows -->
+                    <!--<a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>-->
+                </div>
+
+                <!-- Dots -->
+                <!--<div class="slider-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>-->
+            </div>
+
+            <!-- Small Button Group -->
+            <div class="small-btn-group">
+                <button class="small-btn" onclick="showSection('aboutSection')">
+            About
+          </button>
+                <!--<button class="small-btn" onclick="showSection('pdfSection')">
+            Brochure
+          </button>-->
+                <button class="small-btn" onclick="showSection('gallerySection')">
+            Gallery
+          </button>
+                <button class="small-btn" onclick="showSection('videoSection')">
+            Video
+          </button>
+                <!--<button class="small-btn" onclick="showSection('audioSection')">
+            Audio
+          </button>-->
+            </div>
+
+            <!-- ABOUT SECTION -->
+            <section id="aboutSection" class="tab-content" style="display: none">
+                <div class="lang" data-en="<p>
+                    The church of Our Lady of Grace popularly known as St. Augustine church is situated on the Holy Hill at Old Goa. 
+                    This church belongs to Augustinian Order who were the fourth order to come to Goa and established their convent in 1572 C.E.  
+                    Later on the college of Populo was added to it in 1602 C.E.  The Portuguese Government banned all the religious orders including 
+                    Augustinians in 1832 C.E. and by 1835 C.E. all the Augustinians were forced to leave Goa.</p>
+
+                    <p>As there was no maintenance the huge vault collapsed in 1842 C.E. and its architectural members were auctioned off by the government 
+                      in 1845 C.E.  Its façade and towers fell down in 1931 and in 1938.  It was the largest church complex with seminary, convent, library, 
+                      cloisters, dormitories, galleries and number of cells as different travelers quoted about the grandeur of the Church.</p>
+
+                    <p>The excavation of the church started in 1989 to expose the layout of the church, the convent and the novitiate. The excavation brought 
+                      to light the biggest church of Goa with five altars and eight side chapels. The aisles and the internal walls provided additional support 
+                      to the roof. The interior of the church was profusely decorated with Italian tiles. Tomb stones of prominent persons such as Governors, Captains, 
+                      Archbishops and Provincials are also placed on the floor of the church.</p>
+
+                    <p>Topographical and scientific clearance undertaken during 2003-04 and 2004-05 seasons within the St. Augustine convent has led to the identification 
+                      of the Chapter Chapel where the relic of Queen Ketevan of Georgia were once kept. The queen is one of the patron saint of Georgia, who had been put to 
+                      death in 1624 on the order of Shah Abbas I of Persia (Safavid dynasty). These findings are based on the manuscript published by a Portuguese scholar 
+                      Silva Rego (1958).</p>" 
+					 
+					 data-hi="<p>
+                        चर्च ऑफ लेडी ऑफ ग्रेस जिसे लोकप्रियता से सेंट ऑगस्टीन चर्च के नाम से जाना जाता है, पुराने गोवा में होली हिल पर स्थित है।  यह गिरजाघर ऑगस्टिनियन संप्रदाय के लोगों का है जो गोवा आने 
+                        वाले चौथे संप्रदाय के लोगों थे और उन्होंने 1572 ईस्वी में अपने कॉन्वेंट की स्थापना की।  बाद में 1602 ईस्वी में पोपुलो कॉलेज को इसमें जोड़ा गया।  पुर्तगाली सरकार ने 1832 ईस्वी में ऑगस्टिनियन 
+                        सहित सभी धार्मिक संप्रदायों पर प्रतिबंध लगा दिया और 1835 ईस्वी तक सभी ऑगस्टिनियन को गोवा छोड़ने के लिए मजबूर होना पड़ा।
+                      </p>
+                      
+                      <p>
+                        चूंकि कोई रखरखाव नहीं था, इसलिए 1842 ईस्वी में विशाल संरचना ढह गई और इसके वास्तुशिल्प सदस्यों को 1845 ईस्वी में सरकार द्वारा नीलाम कर दिया गया।  इसका अग्रभाग और मीनारें 1931 और 
+                        1938 में गिर गईं।  यह गिरजाघर, कॉन्वेंट, पुस्तकालय, मठ, शयनगृह, दीर्घाओं और कक्षों की संख्या के साथ सबसे बड़ा गिरजाघर परिसर था, जैसा कि विभिन्न यात्रियों ने गिरजाघर की भव्यता के बारे में उद्धरित किया। 
+                      </p>
+                      
+                      <p>
+                        गिरजाघर की खुदाई 1989 में गिरजाघर, वहाँ के मठ और नौसिखियों के प्रशिक्षण कक्ष के नक़्शों को उजागर करने के लिए शुरू हुई। खुदाई से गोवा का सबसे बड़ा गिरजाघर प्रकाश में आया, जिसमें पांच वेदियां और आठ 
+                        पार्श्व प्रार्थनालय थे। गलियारों और आंतरिक दीवारों ने छत को अतिरिक्त सहायता प्रदान की। गिरजाघर कीआन्तरिक हिस्से को इटैलियन टाइलों से गहराई से सजाया गया था। राज्यपालों, कप्तानों, मुख्य धर्माध्यक्षों और प्रांतीय जैसे 
+                        प्रमुख व्यक्तियों के मकबरे के पत्थर भी गिरजाघर के फर्श पर रखे गए। 
+                      </p>
+
+                      <p>
+                        सेंट ऑगस्टीन कॉन्वेंट के भीतर 2003-04 और 2004-05 सीज़न के दौरान किए गए स्थलाकृतिक और वैज्ञानिक मंजूरी ने चैप्टर चैपल की पहचान की है जहां जॉर्जिया की रानी केटेवन के अवशेष एक बार रखे गए थे। रानी केटेवन 
+                        संरक्षक संत में से एक है, जिसे 1624 में परशिया के शाह अब्बास प्रथम (सफवीद वंश) के आदेश पर मौत की सजा दी गई थी। ये निष्कर्ष एक पुर्तगाली विद्वान सिल्वा रेगो (1958) द्वारा प्रकाशित पांडुलिपि पर आधारित हैं। 
+                      </p>"
+					 
+					 data-kok="<p>
+                        सेंट ऑगस्टीन चर्च ह्या नांवान फामाद आशिल्ली अवर लेडी ऑफ ग्रेस ही चर्च पोरणें गोंयच्या पवित्र दोंगुल्लेचेर आसा. ही चर्च 1572 वर्सा गोंयांत येवन आपलो कॉण्वॅण्ट स्थापन करपी चवथ्या क्रमाच्या 
+                        ऑगस्टीनीयन ऑर्डरीची आसा. उपरांत 1602 वर्सा तातूंत कॉलेज ऑफ पॉपुलोचो आसपाव केलो. पुर्तुगेज सरकारान 1832 वर्सा ऑगस्टीन लोकां सयत सगळ्या धर्मीक ऑर्डरीचेर बंदी घातली आनी 1835 
+                        मेरेन सगळ्या ऑगस्टीनी लोकांक गोंय सोडचें पडलें.</p>
+                        
+                      <p>देखरेख नाशिल्ल्यान 1842 वर्सा हें व्हड घुमटाकार छप्पर कोंसळ्ळें आनी 1845 वर्सा सरकारान ताच्या वास्तुशिल्पांच्या घटकांची पावणी केल्ली. ताचें मुखामळ आनी बुरूज 1931 आनी 1938 वर्सा सकयल 
+                        पडले. वेगवेगळ्या भोंवडेकारांनी इगर्जेच्या भव्यताये विशीं सांगिल्ले प्रमाण सेमिनारी, कॉण्वॅण्ट, वाचनालय, क्लॉस्टर, डॉर्मिटरी, गॅलरी आनी चड कक्षांची संख्या आशिल्लें हें सगळ्यांत व्हडलें इगर्जेचें संकूल आशिल्लें.</p>
+
+                      <p>इगर्ज, कॉण्वॅण्ट आनी प्रशिक्षणार्थ्यांची माहिती मेळोवपा खातीर 1989 वर्सा इगर्जेचें उत्खनन सुरू जालें. ह्या उत्खननाक लागून पांच आल्तार आनी आठ बाजू कपेलां आशिल्ली गोंयची सगळ्यांत व्हडली इगर्ज लोकांचे नदरेक 
+                        आयली. मार्ग आनी भितरल्या वण्टींतल्यान पाख्याक अतिरिक्त आदार मेळ्ळो. इगर्जेचो भितरलो भाग इटालियन फातरांनी भरपूर सजयिल्लो, गव्हर्नर, कॅप्टन, बिस्मसायब आनी प्रोविन्शियल हाचे सारकिल्ल्या नामनेच्या व्यक्तींच्या 
+                        थडग्यांचे फातर लेगीत इगर्जे खातीर वापरल्यात.</p>
+
+                      <p>सांत ऑगस्टीन कॉण्वॅण्टांत 2003-04 आनी 2004-05 हंगामांत घेतिल्ल्या थळाव्या आनी विज्ञानीक मान्यतायेक लागून चॅप्टर कपेल वळखूंक मेळ्ळां, जंय एका वेळार जॉर्जियाची राणी केटॅवानाचो अवशेश दवरिल्ले. ही राणी 
+                        जॉर्जियाची एक आश्रयदातो संत आसा, जिका पर्शियाचो शाह अब्बास I (सफाविद राजवंश) हाच्या आदेशान 1624 वर्सा मरण फर्मायिल्लें. हे सोद पोर्तुगीज विद्वान सिल्वा रेगो (1958) हाणें उजवाडायिल्ल्या हस्तलिखितांचेर 
+                        आदारून आसात.</p>">
+                </div>
+
+                <div class="small-button-group">
+                    <button class="small-btn" onclick="showSection('referencesSection')">
+              References
+            </button>
+                </div>
+            </section>
+            <section id="referencesSection" class="tab-content" style="display: none">
+                <p>
+                    <h2>Primary Sources</h2>
+                    1. Fonseca Jose Nicolau da, An Historical and Archaeological sketch of the city of Goa, Thacker & Co. 1878, eds. Asian Educational Services, New Delhi , 1986.
+                </p>
+                <p>
+                    <h2>Portuguese Sources</h2>
+                    2. Chico Mario, A Igreja dos Agostinhos de Goa e a Arquitectura da India Portuguesa, in “Garcia de Orta”, Vol. I, nr. 2, Imprensa Nacional, Nova Goa, 1954 (in Portuguese).
+                </p>
+                <p>
+                    3. Dias Pedro, Historia de Arte portuguesa no Mundo, vol. 2, “O Espaco do Indico”, Ed. Circulo de Leitores, 1999 (in Portuguese).
+                </p>
+                <p>
+                    4. Figueiredo Lucia, Velha Goa: Guia Arquitectonico, Prova Final do Curso de Arquitectura do DARQ, FCTUC, Coimbra, 2001 (in Portuguese).</p>
+                <p>
+                    5. Gulbenkian Roberto, Relação Verdadeira do Glorioso Martírio da Rainha Ketevan da Geórgia, in separata dos “Anais”ds da Academia de Historia Portuguesa , 2nd series, vol. 30, Lisbon 1985 (in Portuguese)
+                </p>
+                <p>
+                    6. P. Rego António de Silva, Documentação para a História das Missões do Padroado Português no Oriente: Vol. XiI, p. 91-92; Agência Geral do Ultramar, Lisbon 1958 (in Portuguese).
+                </p>
+            </section>
+
+            <!-- Brochure Section -->
+            <!--<section id="pdfSection" class="tab-content" style="display: none">
+                    <a href="#nil" target="_blank" class="view-pdf-btn">
+            View Brochure
+          </a>
+                </section>-->
+
+            <!-- Gallery Section -->
+            <section id="gallerySection" class="tab-content" style="display: none">
+                <img src="Image_St_Augustine_Church/1.webp" class="gallery-img" alt="Gallery image 1" />
+                <img src="Image_St_Augustine_Church/3.webp" class="gallery-img" alt="Gallery image 2" />
+            </section>
+
+            <!-- Lightbox For Gallery Section -->
+            <div id="lightbox" class="lightbox" aria-hidden="true">
+                <button class="lb-close" type="button" aria-label="Close">
+            &times;
+          </button>
+
+                <button class="lb-nav lb-prev" type="button" aria-label="Previous image">
+            &#10094;
+          </button>
+
+                <img id="lightboxImg" class="lb-img" src="" alt="" />
+
+                <button class="lb-nav lb-next" type="button" aria-label="Next image">
+            &#10095;
+          </button>
+
+                <div class="lb-caption">
+                    <span id="lbCount"></span>
+                </div>
+            </div>
+
+            <!-- Videos Section -->
+            <section id="videoSection" class="tab-content" style="display: none">
+                <!-- English Video -->
+                <div class="video-wrapper lang-video" data-lang="en">
+            <iframe
+              src="https://www.youtube.com/embed/9Nj7wFigmJg?si"
+              title="English Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+                <!-- Hindi Video -->
+                <div
+            class="video-wrapper lang-video"
+            data-lang="hi"
+            style="display: none"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/D737aS8FYJE?si"
+              title="Hindi Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+                <!-- Konkani Video -->
+                <div
+            class="video-wrapper lang-video"
+            data-lang="kok"
+            style="display: none"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/6W2LQVqHAao?si"
+              title="Konkani Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+                <div class="lang" data-en="<h2>Video with supportive Sign Language</h2>"></div>
+            </section>
+
+            <!--Audio Section-->
+            <!--<section id="audioSection" class="tab-content" style="display: none">
+          <audio
+            id="audio-en"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source src="Audio English Link" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+
+          <audio
+            id="audio-hi"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source
+              src="Audio Hindi Link"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+
+          <audio
+            id="audio-kok"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source src="Audio Konkani Link" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </section>-->
+
+            <!-- FOOTER -->
+            <footer class="site-footer">
+                <div class="footer-left">
+                    <img src="Image_St_Augustine_Church/asi_logo.jpg" alt="ASI Logo" class="asi-footer-logo" />
+                </div>
+                <p class="lang" data-en="© Superintending Archaeologist, ASI Goa Circle | All Rights Reserved" data-hi="© अधीक्षण पुरातत्वविद्, भारतीय पुरातत्व सर्वेक्षण, गोवा मंडल | सर्वाधिकार सुरक्षित" data-kok="© अधीक्षण पुरातत्वविद्, भारतीय पुरातत्व सर्वेक्षण, गोंय मंडळ | सर्व हक्क राखीव">
+                    © Superintending Archaeologist, ASI Goa Circle | All Rights Reserved
+                </p>
+            </footer>
+        </div>
+        <!-- parchment-container end -->
+    </div>
+    <!-- page-background end -->
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+
+</html>
