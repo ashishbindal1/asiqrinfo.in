@@ -1,0 +1,367 @@
+<!--ASI Heritage QR System Copyright © Ashish Bindal Licensed under GPL v3-->
+<!--Copyright Reserved by SoftTech-->
+<!--Code Designed by © Ashish Bindal on 26/12/2025-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basilica of Bom Jesus</title>
+    <link rel="stylesheet" href="style_file.css" />
+
+    <!-- SITE ICON -->
+    <link rel="icon" href="Image_Basilica_of_Bom_Jesus/Museum.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="Image_Basilica_of_Bom_Jesus/Museum.jpg" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- OUTER WHITE BACKGROUND -->
+    <div class="page-background">
+        <!-- INNER PARCHMENT BACKGROUND CONTAINER -->
+        <div class="parchment-container">
+            <div class="language-dropdown">
+                <select class="lang-select" onchange="setLanguage(this.value)">
+            <option value="">🌐 Select Language</option>
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="kok">कोंकणी</option>
+          </select>
+            </div>
+
+            <!-- HEADER -->
+            <header>
+                <h1 class="lang" data-en="Basilica of Bom Jesus" data-hi="बेसिलिका ऑफ बॉम जीसस" data-kok="बेसिलिका ऑफ बॉम जीसस">
+                    Basilica of Bom Jesus
+                </h1>
+                <p class="subtitle lang" data-en="A UNESCO World Heritage Monument, Old Goa" data-hi="यूनेस्को विश्व धरोहर स्मारक, पुराना गोवा" data-kok="युनेस्को संवसारीक दायज स्मारक, पोरणें गोंय">
+                    A UNESCO World Heritage Monument, Old Goa
+                </p>
+            </header>
+
+            <!--ASI STYLE IMAGE SLIDER -->
+            <div class="slider-container">
+                <div class="asi-slider">
+                    <div class="slide fade">
+                        <img src="Image_Basilica_of_Bom_Jesus/1.webp" alt="banner" />
+                    </div>
+
+                    <!--<div class="slide fade">
+              <img src="#nil" alt="banner" />
+            </div>
+
+            <div class="slide fade">
+              <img src="#nil" alt="banner" />
+            </div>-->
+
+                    <!-- Next / Prev Arrows -->
+                    <!--<a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>-->
+                </div>
+
+                <!-- Dots -->
+                <!--<div class="slider-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>-->
+            </div>
+
+            <!-- Small Button Group -->
+            <div class="small-btn-group">
+                <button class="small-btn" onclick="showSection('aboutSection')">
+            About
+          </button>
+                <!--<button class="small-btn" onclick="showSection('pdfSection')">
+            Brochure
+          </button>-->
+                <button class="small-btn" onclick="showSection('gallerySection')">
+            Gallery
+          </button>
+                <button class="small-btn" onclick="showSection('videoSection')">
+            Video
+          </button>
+                <!--<button class="small-btn" onclick="showSection('audioSection')">
+            Audio
+          </button>-->
+            </div>
+
+            <!-- ABOUT SECTION -->
+            <section id="aboutSection" class="tab-content" style="display: none">
+                <div class="lang" data-en="<p>
+                    The construction of Basilica of Bom Jesus was started on 24th November 1594 out of the funds 
+                    left by Dom Jeronimo Mascarenhas, the captain of the Cochin who died in 1593  bequeathing his 
+                    entire property to the church. Upon completion of the Basilica of Bom Jesus, it was consecrated 
+                    by the Archbishop Dom Fr. Aleixo de Menezes. on 15th May 1605. Two persons viz. Julio Simao, then 
+                    the Chief Engineer of Goa and Domingos Fernandes, an architect of repute were responsible for the 
+                    construction of Basilica of Bom Jesus.</p>
+
+                    <p>The structure is 55.77 m long, 16.76 m broad and admeasures 18.5 m in height. Cruciform on the 
+                      plan, the church has a choir, a nave, and a sacristy. The nave has a main altar, four side altars, 
+                      two chapels. The two pillars supporting the choir bear two inscriptions (one Latin and another Portuguese).</p>
+
+                    <p>The first inscription in Latin translates as:<br>
+                      “The Most Reverend and Illustrious Lord Dom Aleixo Menezes, Archbishop of Goa and Primate of the Indies, 
+                      consecrated this Church of Jesus with solemn rites on 15th May 1605 A.D.”</p>
+
+                    <p>The second inscription in Portuguese translates as:<br>
+                        “This Church of Jesus was begun to be built on the 24th November 1594, and the most Reverend and Illustrious 
+                        Lord Dom Fr. Aleixo de Menezes, Archbishop of Goa and Primate of Indies consecrated it in the year of our Lord 
+                        1605, on the 15th May.”</p>
+
+                    <p>The northern wall of the church has the cenotaph of the benefactor of the church Dom Jeronimo Mascarenhas. 
+                      The inscription on his cenotaph reads as:<br>
+                      “The grave of Dona Hieronimo Mascarenhas, late Captain of Cochin and Ormuz, at whose cost this Church was 
+                      built; out of gratitude the Society of Jesus has dedicated this place to him. He died in 1593.”</p>
+
+                    <p> Opposite to it there is a richly carved pulpit with the figures of Jesus, Evangelists and Doctors of the church.<br>
+                      The richly carved main altar is dedicated to the infant Jesus and above it is a large statue of St. Ignatius Loyola, 
+                      founder of the Jesuit Order gagging at a medallion on which is inscribed HIS.</p>
+
+                    <p>On the northern side is the chapel of the Blessed Sacrament. The chapel on the southern side houses the sacred relics 
+                      of St. Francis Xavier.  The marble tomb of the saint was made by the Florentine sculptor Giovanni Batista Foggini in the 
+                      year 1698 C.E. at the order of the Duke of Tuscany Cosmas III.  The silver casket which contains the relic was made by a 
+                      Goan silversmith in 1636-37 C.E.</p>" 
+					 
+					 data-hi="<p>
+              बेसिलिका ऑफ़ बोम जीसस का निर्माण 24 नवंबर 1594 को आरंभ हुआ। इसके निर्माण के लिए धनराशि डोम जेरोनिमो मस्करेनहास द्वारा छोड़ी गई थी, जो कोचीन के कप्तान 
+              थे और जिनका निधन 1593 में हुआ था। उन्होंने अपनी संपूर्ण संपत्ति गिरजाघर को दान कर दी थी। बेसिलिका ऑफ़ बोम जीससा के निर्माण पूर्ण होने के पश्चात, 15 मई 1605 
+              को आर्चबिशप डोम फ्रा. अलेइक्सो दे मेनेज़ेस द्वारा इसको पवित्र किया गया। इस बेसिलिका के निर्माण में दो व्यक्ति जिम्मेदार थे जूलियो सिमाओ, जो उस समय गोवा के मुख्य 
+              अभियंता थे, तथा डोमिंगोस फर्नांडिस, जो एक प्रसिद्ध वास्तुकार थे।
+            </p>
+            
+            <p>
+              यह संरचना 55.77 मीटर लंबी, 16.76 मीटर चौड़ी है तथा इसकी ऊँचाई 18.5 मीटर है। योजना के अनुसार यह गिरजाघर क्रूसाकार है और इसमें एक क्वायर (गायन मंडप), 
+              एक नेव (मुख्य सभागृह) तथा एक सैक्रिस्टी (पवित्र कक्ष) है। नेव में एक मुख्य वेदी है, चार पार्श्व वेदियाँ हैं और दो प्रार्थनालय हैं। क्वायर को सहारा देने वाले दो स्तंभों पर दो 
+              अभिलेख अंकित हैं—एक लैटिन भाषा में तथा दूसरा पुर्तगाली भाषा में।
+            </p>
+
+            <p>
+              लैटिन भाषा में अंकित प्रथम अभिलेख का हिंदी अनुवाद इस प्रकार है :<br>
+              “गोवा के आर्चबिशप तथा इंडीज़ के प्राइमेट, परम पूज्य एवं प्रतिष्ठित डोम अलेइक्सो मेनेज़ेस ने 15 मई 1605 ईस्वी को इस जीसस चर्च की विधिवत और भव्य अनुष्ठानों के साथ पवित्रता की थी।”
+            </p>
+
+            <p>
+              पुर्तगाली भाषा में अंकित द्वितीय अभिलेख का हिंदी अनुवाद इस प्रकार है:<br>
+              “इस जीसस चर्च का निर्माण 24 नवंबर 1594 को आरंभ किया गया था और हमारे प्रभु के वर्ष 1605 में, 15 मई को, गोवा के आर्चबिशप तथा इंडीज़ के प्राइमेट, परम पूज्य एवं प्रतिष्ठित डोम
+               फ्रा. अलेइक्सो दे मेनेज़ेस द्वारा इसका अभिषेक किया गया।”
+            </p>
+
+            <p>
+              गिरजाघर की उत्तरी दीवार में गिरजाघर के दाता डोम जेरोनिमो मस्करेनहास का स्मारक (सेनोटाफ) स्थित है | उनके स्मारक पर अंकित अभिलेख इस प्रकार है :<br>
+              “डोना हिएरोनिमो मस्करेनहास की समाधि—जो कोचीन और ओरमुज़ के पूर्व कप्तान थे और जिनके व्यय से इस चर्च का निर्माण हुआ। कृतज्ञता स्वरूप, सोसाइटी ऑफ़ 
+              जीसस ने इस स्थान को उन्हें समर्पित किया है। उनका निधन 1593 में हुआ।”
+            </p>
+
+            <p>
+              इसके सामने जीसस, उनके प्रचारकों तथा चर्च के धर्माचार्यों की मूर्तियों से सुसज्जित, समृद्ध रूप से अलंकृत एक उपदेश मंच (पल्पिट) स्थित है ।<br>
+              भव्य रूप से अलंकृत मुख्य वेदी बाल जीसस को समर्पित है और इसके ऊपर जेसुइट संप्रदाय के संस्थापक संत इग्नेशियस लोयोला की एक विशाल प्रतिमा 
+              स्थापित है, जो एक पदक की ओर संकेत करती हुई प्रतीत होती है, जिस पर HIS अंकित है। 
+            </p>
+            
+            <p>
+              उत्तरी ओर धन्य संस्कार (ब्लेस्ड सैक्रामेंट) का प्रार्थनालय स्थित है। दक्षिणी ओर का प्रार्थनालय सेंट फ्रांसिस ज़ेवियर के पवित्र अवशेषों को संजोए हुए है। 
+              संत की संगमरमर की समाधि फ्लोरेंस के मूर्तिकार जियोवानी बतिस्ता फोज्जिनी द्वारा सन् 1698 ईस्वी में टस्कनी के ड्यूक काॅस्मस तृतीय के आदेश पर 
+              बनाई गई थी। जिस चाँदी की संदूक में ये पवित्र अवशेष सुरक्षित हैं, वह गोवा के एक चाँदी कारीगर द्वारा सन् 1636–37 ईस्वी में निर्मित की गई थी।
+            </p>" 
+					 
+					 data-kok="<p>
+                        1593 वर्सा मरण आयिल्ल्या कॅप्टन ऑफ कोचीन मुखेली डोम जेरोनिमो मास्कारॅन्हस हांणें इगर्जे खातीर दान केल्ले पुराय मालमत्तेच्या निधींतल्यान 24 नोव्हेंबर 1594 
+                        दिसा बेसिलिका ऑफ बॉम जीसस साचें बांद काम सुरू जालें. बेसिलिका ऑफ बॉम जीसस साचें काम पुराय जातकूच 15 मे 1605 दिसा बिस्मसायब (आर्चबिशप) डॉम फा. 
+                        आलॅक्स दे मिनेझीस हाणें पवित्र केल्ली. तेन्नाचो गोंयचो मुख्य अभियंतो जुलियो सिमाओ आनी नामनेचो शिल्पकार दुमिंग फेर्नांदीश ह्या दोन व्यक्तींचेर बेसिलिका ऑफ बॉम जीसस 
+                        बांदपाची जापसालदारकी आशिल्ली.</p>
+                        
+                      <p>ही बांदावळ 55.77 मिटर लांब, 16.76 मिटर रूंद आनी अदमासान 18.5 मिटर उंचायेची आसा. प्लॅनाचेर खुरसाचो आकार आशिल्ले इगर्जेंत एक गायन मंडळ (choir) 
+                        एक नेव(nave) आनी एक साक्रिस्ती आसा. नेवांत एक मुखेल वेदी(आल्तार), चार बाजुनी वेदी (altar), दोन कपेलां आसात. गायन मंडळाक आदार दिवपी दोन खांब्यांचेर 
+                        दोन शिलालेख (एक लातीं आनी दुसरो पुर्तुगेज) आसात.</p>
+
+                      <p>लातीं भाशेंतल्या पयल्या कोरांतणेचो अनुवाद असो जाता :<br>
+                        “अत्यंत आदरणीय आनी नामनेचे लॉर्ड डोम आलॅक्स मिनेझीस, गोंयचे बिस्मसायब (आर्चबिशप) आनी इंडीसचो प्रिमेट हांणी 15 मे 1605 इ. स. दिसा विधियुक्त संस्कार करून 
+                        ही जीसस इगर्ज पवित्र केली”</p>
+
+                      <p>पुर्तुगेज भाशेंतले दुसरे कोरांतणेचो अनुवाद असो जाता :<br>
+                        “जीसस ही इगर्ज 24 नोव्हेंबर 1594 दिसा बांदूंक सुरवात केली, आनी अत्यंत आदरणीय आनी नामनेचे लॉर्ड डोम फा. आलॅक्स मिनेझीस, गोंयचे बिस्मसायब (आर्चबिशप) 
+                        आनी इंडीसचे प्रिमेट हांणी आमच्या देव-बाप्पाच्या 1605 वर्साच्या 15 मे दिसा तिका पवित्र केली ”</p>
+                              
+                      <p>इगर्जेचे उत्तरेक आशिल्ल्या वण्टीचेर इगर्जेचो आश्रयदातो डॉम जॅरोम मास्कारेन्हस हाचें स्मारक आसा. ताच्या फोंडाचेर कोरांतिल्लो शिलालेख अशें सांगता :<br>
+                        “कोची आनी ओरमुजाचो सर्गेस्त कॅप्टन डोना हिरोनिमो मास्कारेन्हास हाचें थडगें, जाच्या खर्चान ही इगर्ज बांदली; ताचे उपकार मानून जेजू समाजान ही सुवात 
+                        ताका समर्पीत केल्या. ताका 1593 वर्सा मरण आयलें”</p>
+                      
+                      <p>ताचे मुखा वयले बाजूक जेजू, सुवार्तिक आनी इगर्जेचे दोतोर हांच्यो आकृत्यो आशिल्लें एक कोरांतिल्लें सोबीत गर्भगृह आसा.<br>
+                        सोबितकायेन कोरांतिल्ली मुखेल आल्तार बाळ जेजूक समर्पीत केल्या आनी ताचे वयर जेजूइत ऑर्डराचो संस्थापक सांत इग्नेशियस लॉयेलाचो एक व्हड पुतळो आसा जो एका पदकाचें मुखामळ 
+                        बंद करता आनी जाचेर HIS अशें कोरांतिल्लॆं आसा.</p>
+
+                      <p>उत्तरेक पवित्र साक्रामेन्ताचेंण्टाचें कपेल आसा. दक्षीणेच्या कपेलांत सां फ्रांसिस शावियराचे हांचे पवित्र अवशेश दवरल्यात. संताचें संगमरवरी थडगें इ. स. 1698 वर्सा फ्लोरंटीन मूर्तिकार गियोवन्नी 
+                        बाप्तिस्त फॉग्गिनी हांणें ड्यूक ऑफ टस्कनी कॉस्मास III हांच्या आदेशान बांदिल्लें. हो अवशेश आशिल्ली रुप्याची पेटी 1636-37 इ. स. त गोंयच्या एका चांदीकारान तयार केल्ली</p>"></div>
+
+                <div class="small-button-group">
+                    <button class="small-btn" onclick="showSection('referencesSection')">
+              References
+            </button>
+                </div>
+            </section>
+            <section id="referencesSection" class="tab-content" style="display: none">
+                <p>
+                    1. Bhandari Romesh, GOA, Lotus Collection, Roli Books, New Delhi, 1999.
+                </p>
+                <p>
+                    2. Kamat Pratima, Farar Far, Local Resistance to Colonial Hegemony in Goa 15010-1912, Institute Menezes Braganza, Panaji, Goa, 1999.
+                </p>
+                <p>
+                    3. Fonseca Jose Nicolau de, An Historical and Archaeological sketch of city of Goa, 1878.
+                </p>
+                <p>4. Golden Goa, Marg Publication, 1980.</p>
+                <p>
+                    5. Nunes Judilia, The Monuments in Old Goa, Agam Kala Prakashan, New Delhi, 1979.
+                </p>
+                <p>6. Perreira Jose, Baroque Goa, Books & Books, New Delhi, 1995.</p>
+                <p>7. Rajagopalan S., Old Goa, New Delhi, 1987.</p>
+                <p>
+                    8. Shirodkar P. P., Fortresses and Forts of Goa, Directorate of Art and Culture, Govt.of Goa, 2015.
+                </p>
+            </section>
+
+            <!-- Brochure Section -->
+            <!--<section id="pdfSection" class="tab-content" style="display: none">
+                    <a href="#nil" target="_blank" class="view-pdf-btn">
+            View Brochure
+          </a>
+                </section>-->
+
+            <!-- Gallery Section -->
+            <section id="gallerySection" class="tab-content" style="display: none">
+                <img src="Image_Basilica_of_Bom_Jesus/2.webp" class="gallery-img" alt="Gallery image 1" />
+                <img src="Image_Basilica_of_Bom_Jesus/3.webp" class="gallery-img" alt="Gallery image 2" />
+                <br />
+                <img src="Image_Basilica_of_Bom_Jesus/4.webp" class="gallery-img" alt="Gallery image 3" />
+                <img src="Image_Basilica_of_Bom_Jesus/5.webp" class="gallery-img" alt="Gallery image 4" />
+                <img src="Image_Basilica_of_Bom_Jesus/6.webp" class="gallery-img" alt="Gallery image 5" />
+            </section>
+
+            <!-- Lightbox For Gallery Section -->
+            <div id="lightbox" class="lightbox" aria-hidden="true">
+                <button class="lb-close" type="button" aria-label="Close">
+            &times;
+          </button>
+
+                <button class="lb-nav lb-prev" type="button" aria-label="Previous image">
+            &#10094;
+          </button>
+
+                <img id="lightboxImg" class="lb-img" src="" alt="" />
+
+                <button class="lb-nav lb-next" type="button" aria-label="Next image">
+            &#10095;
+          </button>
+
+                <div class="lb-caption">
+                    <span id="lbCount"></span>
+                </div>
+            </div>
+
+            <!-- Videos Section -->
+            <section id="videoSection" class="tab-content" style="display: none">
+            <!-- English Video -->
+            <div class="video-wrapper lang-video" data-lang="en">
+            <iframe
+              src="https://www.youtube.com/embed/PBeRwl7OyX8?si"
+              title="English Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+            <!-- Hindi Video -->
+            <div
+            class="video-wrapper lang-video"
+            data-lang="hi"
+            style="display: none"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/dWnG-e6OSoU?si"
+              title="Hindi Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+            <!-- Konkani Video -->
+            <div
+            class="video-wrapper lang-video"
+            data-lang="kok"
+            style="display: none"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/InGcdMoylsQ?si"
+              title="Konkani Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+				<div class="lang" data-en="<h2>Video with supportive Sign Language</h2>"></div>
+            </section>
+
+            <!--Audio Section-->
+            <!--<section id="audioSection" class="tab-content" style="display: none">
+          <audio
+            id="audio-en"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source src="Audio English Link" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+
+          <audio
+            id="audio-hi"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source
+              src="Audio Hindi Link"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+
+          <audio
+            id="audio-kok"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source src="Audio Konkani Link" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </section>-->
+
+            <!-- FOOTER -->
+            <footer class="site-footer">
+                <div class="footer-left">
+                    <img src="Image_Basilica_of_Bom_Jesus/asi_logo.jpg" alt="ASI Logo" class="asi-footer-logo" />
+                </div>
+                <p class="lang" data-en="© Superintending Archaeologist, ASI Goa Circle | All Rights Reserved" data-hi="© अधीक्षण पुरातत्वविद्, भारतीय पुरातत्व सर्वेक्षण, गोवा मंडल | सर्वाधिकार सुरक्षित" data-kok="© अधीक्षण पुरातत्वविद्, भारतीय पुरातत्व सर्वेक्षण, गोंय मंडळ | सर्व हक्क राखीव">
+                    © Superintending Archaeologist, ASI Goa Circle | All Rights Reserved
+                </p>
+            </footer>
+        </div>
+        <!-- parchment-container end -->
+    </div>
+    <!-- page-background end -->
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
