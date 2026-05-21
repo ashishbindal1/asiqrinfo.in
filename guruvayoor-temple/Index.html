@@ -1,0 +1,382 @@
+<!--ASI Heritage QR System Copyright © Ashish Bindal Licensed under GPL v3-->
+<!--Copyright Reserved by SoftTech-->
+<!--Code Designed by © Ashish Bindal on 12/01/2026-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guruvayoor Temple</title>
+    <link rel="stylesheet" href="style_file.css" />
+
+    <!-- SITE ICON -->
+    <link rel="icon" href="Image_Guruvayoor_Temple/Museum.jpg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="Image_Guruvayoor_Temple/Museum.jpg"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- OUTER WHITE BACKGROUND -->
+    <div class="page-background">
+      <!-- INNER PARCHMENT BACKGROUND CONTAINER -->
+      <div class="parchment-container">
+        <div class="language-dropdown">
+          <select class="lang-select" onchange="setLanguage(this.value)">
+            <option value="">🌐 Select Language</option>
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="ml">മലയാളം</option>
+          </select>
+        </div>
+        <!-- HEADER -->
+        <header>
+          <h1
+            class="lang"
+            data-en="Guruvayoor Temple"
+            data-hi="गुरुवायुर मंदिर"
+            data-ml="ഗുരുവായൂർ ക്ഷേത്ര"
+          >
+            Guruvayoor Temple
+          </h1>
+          <p
+            class="subtitle lang"
+            data-en="A renowned pilgrim centre in Kerala"
+            data-hi="केरल में एक प्रसिद्ध तीर्थ स्थल"
+            data-ml="കേരളത്തിലെ പ്രശസ്ത തീർത്ഥാടന കേന്ദ്രം"
+          >
+            A renowned pilgrim centre in Kerala
+          </p>
+        </header>
+
+        <!--ASI STYLE IMAGE SLIDER -->
+        <div class="slider-container">
+          <div class="asi-slider">
+            <div class="slide fade">
+              <img src="Image_Guruvayoor_Temple/1.jpeg" alt="banner" />
+            </div>
+
+            <div class="slide fade">
+              <img src="Image_Guruvayoor_Temple/2.jpeg" alt="banner" />
+            </div>
+
+            <div class="slide fade">
+              <img src="Image_Guruvayoor_Temple/3.webp" alt="banner" />
+            </div>
+
+            <!-- Next / Prev Arrows -->
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+
+          <!-- Dots -->
+          <div class="slider-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+
+        <!-- Small Button Group -->
+        <div class="small-btn-group">
+          <button class="small-btn" onclick="showSection('aboutSection')">
+            About
+          </button>
+          <!--<button class="small-btn" onclick="showSection('pdfSection')">
+            Brochure
+          </button>-->
+          <button class="small-btn" onclick="showSection('gallerySection')">
+            Gallery
+          </button>
+          <button class="small-btn" onclick="showSection('videoSection')">
+            Videos
+          </button>
+          <!--<button class="small-btn" onclick="showSection('audioSection')">
+            Audio
+          </button>-->
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <section id="aboutSection" class="tab-content" style="display: none">
+          <div
+            class="lang"
+            data-en="<p>The  Guruvayoor Sri Krishna Temple is situated in the town of Guruvayoor, Thrissur district, Kerala, India. Located approximately 
+              26 kilometers (16 miles) northwest of Thrissur city, the temple stands as one of the most revered and actively visited Hindu pilgrimage sites 
+              globally. Dedicated to the deity Guruvayoorappan, a beloved form of Vishnu, the temple is affectionately hailed by devotees as Bhuloka Vaikunta, 
+              the Holy Abode of Vishnu on Earth. The temple is a synthesis of profound mythology, traditional Kerala architecture, and meticulously maintained 
+              ritual practices, all centered on the loving worship of Lord Krishna</p>
+
+            <p>According to ancient legends, the idol of Lord Krishna worshiped at Guruvayoor has a divine origin. It is believed that this idol was originally 
+              worshiped by Lord Vishnu and later by Lord Krishna himself in the city of Dwarka. After the submergence of Dwarka into the ocean, the idol was retrieved 
+              by Guru (Brihaspati), the teacher of the gods, and Vayu, the god of wind. They consecrated the idol at the present site, which came to be known as Guruvayoor, 
+              derived from the names Guru and Vayu.</p>
+
+            <p>The temple is believed to be over one thousand years old, with references found in ancient texts such as the Skanda Purana and Narayaneeyam. Over centuries, 
+              Guruvayoor Temple has survived invasions, fires, and natural calamities, yet it continues to remain a powerful center of devotion.The presiding deity, Guruvayoorappan, 
+              is a four-armed form of Lord Krishna holding the conch (Shankha), discus (Chakra), mace (Gada), and lotus (Padma). The idol is made of a rare sacred stone called Patala 
+              Anjana Shila and radiates deep spiritual energy.</p>
+
+            <p>Guruvayoor Temple follows the traditional Kerala temple architectural style, marked by simplicity, symmetry, and spiritual focus. The outer structure is modest, while 
+              the inner sanctum is designed to direct the devotee’s attention entirely toward the deity.<br>
+            Key features of the temple include:<br>
+            <strong>1. Sreekovil (Sanctum Sanctorum): The innermost chamber housing the deity.</strong><br>
+            <strong>2. Namaskara Mandapam: A pavilion in front of the sanctum where devotees offer prayers.</strong><br>
+            <strong>3. Deepastambham: The ceremonial lamp pillar.</strong><br>
+            <strong>4. Rudratheertham: The sacred temple pond.</strong><br>
+            The interiors are adorned with oil lamps, wooden carvings, and mural paintings depicting scenes from the life of Lord Krishna, creating a serene and sacred atmosphere.</p>
+
+           <p> The temple follows a strict schedule of daily rituals performed according to ancient Vedic and Tantric traditions. Worship begins before dawn with Nirmalya Darshan, 
+            followed by several poojas throughout the day, and concludes with Athazha Pooja at night. Each ritual is performed with precision, preserving centuries-old customs. 
+            One of the most well-known offerings is Tulabharam, where devotees offer items such as bananas, jaggery, sugar, or coins equal to their body weight as an expression 
+            of devotion and gratitude.</p>
+
+            <p>Elephants hold a special place in the temple’s traditions. These elephants are housed at Punnathur Kotta, located a few kilometers from the temple. They participate 
+              in temple rituals and festivals and are regarded as sacred servants of the deity.</p>
+              
+            <p>Among the many festivals celebrated here, Guruvayoor Ekadashi , Ulsavam, the annual temple festival, and Krishna Janmashtami, celebrating the birth of Lord Krishna.</p>
+            <p>Today, Guruvayoor Temple is not only a major pilgrimage center but also a symbol of living Hindu tradition. The temple is managed by the Guruvayoor Devaswom, which oversees 
+              temple administration, charity activities, education, and elephant care.</p>"
+            data-hi="<p>गुरुवायुर श्रीकृष्ण मंदिर भारत के केरल राज्य के त्रिशूर ज़िले के गुरुवायुर नगर में स्थित है। यह मंदिर त्रिशूर शहर से लगभग 26 किलोमीटर (16 मील) उत्तर-पश्चिम में स्थित है और विश्व के सबसे पवित्र तथा सर्वाधिक 
+              श्रद्धा से दर्शन किए जाने वाले हिंदू तीर्थ स्थलों में से एक है। यह मंदिर भगवान विष्णु के प्रिय स्वरूप गुरुवायुरप्पन को समर्पित है और भक्तों द्वारा प्रेमपूर्वक “भूलोक वैकुंठ”, अर्थात पृथ्वी पर विष्णु का पवित्र धाम, कहा जाता है। यह 
+              मंदिर गहन पौराणिक कथाओं, पारंपरिक केरल शैली की वास्तुकला और सुव्यवस्थित धार्मिक अनुष्ठानों का अद्भुत संगम है, जिसका केंद्र भगवान श्रीकृष्ण की भक्ति है।</p>
+              
+              <p>प्राचीन कथाओं के अनुसार, गुरुवायुर में स्थापित भगवान श्रीकृष्ण की मूर्ति का दिव्य उद्गम है। माना जाता है कि इस मूर्ति की पूजा पहले भगवान विष्णु द्वारा और बाद में स्वयं भगवान श्रीकृष्ण द्वारा द्वारका नगरी में की जाती थी। 
+                जब द्वारका नगरी समुद्र में विलीन हो गई, तब देवताओं के गुरु बृहस्पति (गुरु) और पवन देव वायु ने इस मूर्ति को पुनः प्राप्त किया और वर्तमान स्थल पर इसकी प्रतिष्ठा की। गुरु और वायु के नामों से ही इस स्थान का नाम 
+                गुरुवायुर पड़ा।<p/>
+
+              <p>माना जाता है कि यह मंदिर एक हजार वर्ष से भी अधिक पुराना है। इसका उल्लेख स्कंद पुराण और नारायणीयम् जैसे प्राचीन ग्रंथों में मिलता है। सदियों के दौरान गुरुवायुर मंदिर ने आक्रमणों, अग्निकांडों और प्राकृतिक 
+                आपदाओं का सामना किया, फिर भी यह भक्ति और आस्था का एक शक्तिशाली केंद्र बना हुआ है। यहाँ के प्रधान देवता गुरुवायुरप्पन भगवान श्रीकृष्ण के चतुर्भुज स्वरूप हैं, जिनके हाथों में शंख, चक्र, गदा और पद्म 
+                धारण हैं। यह मूर्ति पाताल अंजन शिला नामक दुर्लभ पवित्र पत्थर से बनी है और गहरी आध्यात्मिक ऊर्जा का संचार करती है।</p>
+
+              <p>गुरुवायुर मंदिर की वास्तुकला पारंपरिक केरल मंदिर शैली पर आधारित है, जिसमें सादगी, संतुलन और आध्यात्मिक एकाग्रता झलकती है। बाहरी संरचना साधारण है, जबकि गर्भगृह इस प्रकार निर्मित है कि भक्त का 
+                ध्यान पूर्ण रूप से देवता पर केंद्रित हो सके।<br>
+                मंदिर की प्रमुख विशेषताएँ:<br>
+                <strong>1. श्रीकोविल (गर्भगृह): जहाँ भगवान विराजमान हैं।</strong><br>
+                <strong>2. नमस्कार मंडपम: जहाँ भक्त प्रार्थना करते हैं।</strong><br>
+                <strong>3. दीपस्तंभम, पारंपरिक दीप स्तंभ।</strong><br>
+                <strong>4. रुद्रतीर्थम, पवित्र मंदिर सरोवर।</strong><br>
+                मंदिर का आंतरिक भाग दीपों की रोशनी, लकड़ी की नक्काशी और भगवान श्रीकृष्ण के जीवन से जुड़ी भित्ति चित्रों से सुसज्जित है, जो एक शांत और पवित्र वातावरण का निर्माण करता है।मंदिर का आंतरिक भाग दीपों की रोशनी, 
+                लकड़ी की नक्काशी और भगवान श्रीकृष्ण के जीवन से जुड़ी भित्ति चित्रों से सुसज्जित है, जो एक शांत और पवित्र वातावरण का निर्माण करता है।</p>
+
+              <p>मंदिर में प्रतिदिन होने वाले सभी अनुष्ठान प्राचीन वैदिक और तांत्रिक परंपराओं के अनुसार संपन्न किए जाते हैं। पूजा की शुरुआत प्रातः काल निर्माल्य दर्शन से होती है, इसके बाद दिनभर विभिन्न पूजाएँ होती हैं और रात्रि में अथाझा 
+                पूजा के साथ पूजा संपन्न होती है। प्रत्येक अनुष्ठान अत्यंत श्रद्धा और अनुशासन के साथ किया जाता है। यहाँ की प्रसिद्ध भेंटों में से एक है तुलाभारम, जिसमें भक्त अपने शरीर के वजन के बराबर केले, गुड़, शक्कर या सिक्के अर्पित 
+                करते हैं। यह भेंट श्रद्धा, कृतज्ञता और समर्पण का प्रतीक मानी जाती है।</p>
+
+              <p>हाथियों का गुरुवायुर मंदिर से विशेष संबंध है। मंदिर से कुछ किलोमीटर दूर स्थित पुन्नथूर कोट्टा में इन हाथियों का पालन-पोषण किया जाता है। ये हाथी मंदिर के अनुष्ठानों और त्योहारों में भाग लेते हैं और उन्हें देवता के पवित्र सेवक माना जाता है।</p>
+              
+              <p>यहाँ मनाए जाने वाले प्रमुख उत्सवों में गुरुवायुर एकादशी, वार्षिक मंदिर उत्सव उत्सवम्, और भगवान श्रीकृष्ण के जन्मोत्सव कृष्ण जन्माष्टमी प्रमुख हैं।</p>
+              <p>आज गुरुवायुर मंदिर न केवल एक प्रमुख तीर्थस्थल है, बल्कि जीवंत हिंदू परंपरा का प्रतीक भी है। मंदिर का संचालन गुरुवायुर देवस्वोम द्वारा किया जाता है, जो मंदिर प्रशासन, धर्मार्थ गतिविधियों, शिक्षा और हाथियों की देखभाल का कार्य करता है।</p>"
+            data-ml="<p>ഗുരുവായുര്‍ ശ്രീകൃഷ്ണ ക്ഷേത്രം ഇന്ത്യയിലെ കേരള സംസ്ഥാനത്തിലെ തൃശ്ശൂര്‍ ജില്ലയിലെ ഗുരുവായുര്‍ നഗരത്തിലാണ് സ്ഥിതിചെയ്യുന്നത്. തൃശ്ശൂര്‍ നഗരത്തില്‍നിന്ന് ഏകദേശം 26 കിലോമീറ്റര്‍ 
+              (16 മൈല്‍) വടക്കുപടിഞ്ഞാറായി സ്ഥിതി ചെയ്യുന്ന ഈ ക്ഷേത്രം ലോകത്തിലെ ഏറ്റവും വിശുദ്ധവും ഏറ്റവും അധികം സന്ദര്‍ശിക്കപ്പെടുന്ന ഹിന്ദു തീര്‍ഥാടന കേന്ദ്രങ്ങളിലൊന്നാണ്. വിഷ്ണുവിന്റെ 
+              പ്രിയസ്വരൂപമായ ഗുരുവായുരപ്പന്‍ എന്ന പേരില്‍ ആരാധിക്കപ്പെടുന്ന ഈ ക്ഷേത്രത്തെ ഭക്തര്‍ സ്നേഹപൂര്‍വ്വം “ഭൂലോക വൈകുണ്ഠം”, അഥവാ ഭൂമിയിലെ വിഷ്ണുവിന്റെ ദിവ്യവാസസ്ഥലം എന്നും 
+              വിളിക്കുന്നു. ആഴത്തിലുള്ള പുരാണപരമ്പരകളും പരമ്പരാഗത കേരള വാസ്തുശില്പശൈലിയും കര്‍ശനമായി പാലിക്കുന്ന ആരാധനാചാരങ്ങളും ഏകീകരിക്കുന്ന ഈ ക്ഷേത്രം പൂര്‍ണമായും ഭഗവാന്‍ 
+              ശ്രീകൃഷ്ണന്റെ ആരാധനയിലേക്കാണ് സമര്‍പ്പിക്കപ്പെട്ടിരിക്കുന്നത്.</p>
+              
+              <p>പുരാതന വിശ്വാസങ്ങള്‍ പ്രകാരം ഗുരുവായുരില്‍ ആരാധിക്കപ്പെടുന്ന ഭഗവാന്‍ ശ്രീകൃഷ്ണന്റെ വിഗ്രഹത്തിന് ദിവ്യമായ ഉദ്ഭവമുണ്ട്. ഈ വിഗ്രഹം ആദ്യം മഹാവിഷ്ണുവും പിന്നീട് ദ്വാരകാനഗരിയില്‍ 
+                ഭഗവാന്‍ ശ്രീകൃഷ്ണനും തന്നെ ആരാധിച്ചിരുന്നതാണെന്ന് വിശ്വസിക്കപ്പെടുന്നു. ദ്വാരക നഗരം സമുദ്രത്തില്‍ ലയിച്ചപ്പോള്‍ ദേവന്മാരുടെ ഗുരുവായ **ബൃഹസ്പതി (ഗുരു)**യും വായുദേവനും ചേര്‍ന്ന് ഈ 
+                വിഗ്രഹം രക്ഷപ്പെടുത്തി ഇന്നത്തെ സ്ഥലത്ത് പ്രതിഷ്ഠിച്ചു. ഗുരുവിന്റെയും വായുവിന്റെയും പേരുകളില്‍ നിന്നാണ് ഗുരുവായുര്‍ എന്ന നാമം രൂപപ്പെട്ടത്.</p>
+
+              <p>ഈ ക്ഷേത്രത്തിന് ആയിരം വര്‍ഷത്തിലധികം പഴക്കമുണ്ടെന്നാണ് വിശ്വാസം. സ്കന്ദ പുരാണം, നാരായണീയം തുടങ്ങിയ പുരാതന ഗ്രന്ഥങ്ങളില്‍ ഈ ക്ഷേത്രത്തെക്കുറിച്ചുള്ള പരാമര്‍ശങ്ങള്‍ കാണപ്പെടുന്നു. 
+                നൂറ്റാണ്ടുകള്‍ക്കിടെ ആക്രമണങ്ങളും തീപിടിത്തങ്ങളും പ്രകൃതിദുരന്തങ്ങളും അതിജീവിച്ച ഗുരുവായുര്‍ ക്ഷേത്രം ഇന്നും ഭക്തിയുടെ ശക്തമായ കേന്ദ്രമായി നിലകൊള്ളുന്നു. ഇവിടത്തെ മുഖ്യദേവതയായ 
+                ഗുരുവായുരപ്പന്‍ ശംഖം, ചക്രം, ഗദ, പത്മം എന്നീ ആയുധങ്ങള്‍ ധരിച്ച നാലുകൈകളുള്ള ഭഗവാന്‍ ശ്രീകൃഷ്ണന്റെ രൂപമാണ്. ഈ വിഗ്രഹം പാതാള അഞ്ജന ശില എന്ന അപൂര്‍വ്വവും പവിത്രവുമായ കല്ലില്‍ 
+                നിന്നാണ് നിര്‍മ്മിച്ചിരിക്കുന്നത്. ദീപ്തമായ ആത്മീയ ശക്തി വികിരണം ചെയ്യുന്ന ദിവ്യരൂപമാണിത്.</p>
+
+              <p>ഗുരുവായുര്‍ ക്ഷേത്രം പരമ്പരാഗത കേരള ക്ഷേത്ര വാസ്തുശില്പശൈലിയിലാണ് നിര്‍മ്മിച്ചിരിക്കുന്നത്. ലാളിത്യം, സമതുലിത ഘടന, ആത്മീയ ഏകാഗ്രത എന്നിവയാണ് ഈ ശൈലിയുടെ പ്രധാന സവിശേഷതകള്‍. 
+                പുറംഘടന ലളിതമായതായിരിക്കുമ്പോള്‍ അന്തര്‍ഗൃഹം ഭക്തന്റെ ശ്രദ്ധ പൂര്‍ണമായും ദേവതയിലേക്കു കേന്ദ്രീകരിക്കുന്ന തരത്തിലാണ് രൂപകല്‍പന ചെയ്തിരിക്കുന്നത്.<br>
+                ക്ഷേത്രത്തിന്റെ പ്രധാന ഘടകങ്ങള്‍:<br>
+                <strong> 1. ശ്രീകോവില്‍ (ഗര്‍ഭഗൃഹം): ദേവന്‍ വസിക്കുന്ന പരിശുദ്ധസ്ഥലം</strong><br>
+                <strong> 2. നമസ്കാര മണ്ഡപം: ഭക്തര്‍ പ്രാര്‍ഥന അര്‍പ്പിക്കുന്ന സ്ഥലം</strong><br>
+                <strong> 3. ദീപസ്തംഭം: പരമ്പരാഗത ദീപസ്തംഭം</strong><br>
+                <strong> 4. രുദ്രതീര്‍ത്ഥം: ക്ഷേത്രത്തിലെ പവിത്ര കുളം</strong><br>
+                ക്ഷേത്രത്തിന്റെ അകത്തളങ്ങള്‍ എണ്ണവിളക്കുകള്‍, മനോഹരമായ മരക്കലാശില്പങ്ങള്‍, ഭഗവാന്‍ ശ്രീകൃഷ്ണന്റെ ജീവിതത്തെ ആസ്പദമാക്കിയ ഭിത്തിചിത്രങ്ങള്‍ എന്നിവകൊണ്ട് അലങ്കരിക്കപ്പെട്ടിരിക്കുന്നു. ഇതൊക്കെയും 
+                ശാന്തവും പരിശുദ്ധവുമായ അന്തരീക്ഷം സൃഷ്ടിക്കുന്നു.</p>
+
+              <p>ക്ഷേത്രത്തില്‍ ദിനംപ്രതി നടക്കുന്ന എല്ലാ ആചാരങ്ങളും പുരാതന വൈദികവും താന്ത്രികവുമായ പരമ്പരകള്‍ കൃത്യമായി പാലിച്ചാണ് നടത്തപ്പെടുന്നത്. പുലര്‍ച്ചെ നിര്‍മാല്യ ദര്‍ശനത്തോടെ ആരംഭിക്കുന്ന ആരാധനകള്‍ 
+                ദിവസമൊട്ടാകെ വിവിധ പൂജകളായി തുടരുകയും രാത്രി അത്താഴപൂജയോടെ സമാപിക്കുകയും ചെയ്യുന്നു. ഓരോ കര്‍മ്മവും അതീവ ശുദ്ധിയോടും ശാസ്ത്രീയക്രമത്തോടും കൂടി നിര്‍വഹിക്കപ്പെടുന്നു. ഗുരുവായുരില്‍ 
+                പ്രശസ്തമായ വഴിപാടുകളില്‍ ഒന്നാണ് തുലാഭാരം. ഭക്തര്‍ സ്വന്തം ശരീരഭാരത്തിനുതുല്യമായി വാഴപ്പഴം, ശര്‍ക്കര, പഞ്ചസാര, അല്ലെങ്കില്‍ നാണയങ്ങള്‍ സമര്‍പ്പിക്കുന്നതാണ് ഈ വഴിപാട്. ഇത് സമര്‍പ്പണത്തിന്റെയും 
+                കൃതജ്ഞതയുടെയും പ്രതീകമായി കണക്കാക്കപ്പെടുന്നു.</p>
+
+              <p>ആനകള്‍ക്ക് ഗുരുവായുര്‍ ക്ഷേത്രത്തില്‍ പ്രത്യേക സ്ഥാനമുണ്ട്. ക്ഷേത്രത്തില്‍ നിന്ന് ഏതാനും കിലോമീറ്റര്‍ അകലെയുള്ള പുന്നത്തൂര്‍ കോട്ടയില്‍ ഇവയെ പരിപാലിക്കുന്നു. ക്ഷേത്രാചാരങ്ങളിലും ഉത്സവങ്ങളിലും 
+                ഈ ആനകള്‍ പങ്കുചേരുകയും ദേവന്റെ പവിത്ര സേവകരായി കണക്കാക്കപ്പെടുകയും ചെയ്യുന്നു.</p>
+
+              <p>ഗുരുവായുര്‍ ഏകാദശി, വാര്‍ഷിക ക്ഷേത്രോത്സവമായ ഉത്സവം, ഭഗവാന്‍ ശ്രീകൃഷ്ണന്റെ ജന്മദിനമായ കൃഷ്ണ ജന്മാഷ്ടമി എന്നിവയാണ് ഇവിടെ ആഘോഷിക്കുന്ന പ്രധാന ഉത്സവങ്ങള്‍.</p>
+
+              <p>ഇന്ന് ഗുരുവായുര്‍ ക്ഷേത്രം ഒരു പ്രധാന തീര്‍ഥാടന കേന്ദ്രമെന്നതിലുപരി ജീവന്തമായ ഹിന്ദു പരമ്പരയുടെ പ്രതീകവുമാണ്. ക്ഷേത്രത്തിന്റെ ഭരണവും സാമൂഹിക സേവനങ്ങളും 
+                വിദ്യാഭ്യാസ പ്രവര്‍ത്തനങ്ങളും ആനപരിപാലനവും ഗുരുവായുര്‍ ദേവസ്വം ആണ് നിര്‍വഹിക്കുന്നത്.ഇന്ന് ഗുരുവായുര്‍ ക്ഷേത്രം ഒരു പ്രധാന തീര്‍ഥാടന കേന്ദ്രമെന്നതിലുപരി ജീവന്തമായ 
+                ഹിന്ദു പരമ്പരയുടെ പ്രതീകവുമാണ്. ക്ഷേത്രത്തിന്റെ ഭരണവും സാമൂഹിക സേവനങ്ങളും വിദ്യാഭ്യാസ പ്രവര്‍ത്തനങ്ങളും ആനപരിപാലനവും ഗുരുവായുര്‍ ദേവസ്വം ആണ് നിര്‍വഹിക്കുന്നത്.</p>">
+		</div>
+        </section>
+
+        <!-- Brochure Section -->
+        <!--<section id="pdfSection" class="tab-content" style="display: none">
+          <a
+            href="#nil"
+            target="_blank"
+            class="view-pdf-btn"
+          >
+            View Brochure
+          </a>
+        </section>-->
+
+        <!-- Gallery Section -->
+        <section id="gallerySection" class="tab-content" style="display: none">
+                    <img src="Image_Guruvayoor_Temple/4.jpg" class="gallery-img" alt="Gallery image 1" />
+                    <img src="Image_Guruvayoor_Temple/5.webp" class="gallery-img" alt="Gallery image 2" />
+                    <img src="Image_Guruvayoor_Temple/6.jpeg" class="gallery-img" alt="Gallery image 3" />
+                    <img src="Image_Guruvayoor_Temple/7.jpg" class="gallery-img" alt="Gallery image 4" />
+                    <img src="Image_Guruvayoor_Temple/8.jpg" class="gallery-img" alt="Gallery image 5" />
+                    <img src="Image_Guruvayoor_Temple/9.webp" class="gallery-img" alt="Gallery image 6" />
+                    <img src="Image_Guruvayoor_Temple/10.jpg" class="gallery-img" alt="Gallery image 7" />
+                    <img src="Image_Guruvayoor_Temple/11.jpg" class="gallery-img" alt="Gallery image 8" />
+                    <img src="Image_Guruvayoor_Temple/12.jpg" class="gallery-img" alt="Gallery image 9" />
+                    <img src="Image_Guruvayoor_Temple/13.jpg" class="gallery-img" alt="Gallery image 10" />
+                    <img src="Image_Guruvayoor_Temple/14.jpg" class="gallery-img" alt="Gallery image 11" />
+                    <img src="Image_Guruvayoor_Temple/15.jpg" class="gallery-img" alt="Gallery image 12" />
+                </section>
+
+                <!-- Lightbox For Gallery Section -->
+        <div id="lightbox" class="lightbox" aria-hidden="true">
+          <button class="lb-close" type="button" aria-label="Close">
+            &times;
+          </button>
+
+          <button
+            class="lb-nav lb-prev"
+            type="button"
+            aria-label="Previous image"
+          >
+            &#10094;
+          </button>
+
+          <img id="lightboxImg" class="lb-img" src="" alt="" />
+
+          <button class="lb-nav lb-next" type="button" aria-label="Next image">
+            &#10095;
+          </button>
+
+          <div class="lb-caption">
+            <span id="lbCount"></span>
+          </div>
+        </div>
+
+        <!-- Videos Section -->
+        <section id="videoSection" class="tab-content" style="display: none">
+          <!-- English Video -->
+          <div class="video-wrapper lang-video" data-lang="en">
+            <iframe
+              src="https://www.youtube.com/embed/5wfsnX7GTZk"
+              title="English Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- Hindi Video -->
+          <!--<div
+            class="video-wrapper lang-video"
+            data-lang="hi"
+            style="display: none"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/HINDI_VIDEO_ID"
+              title="Hindi Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>-->
+
+          <!-- Malayalam Video -->
+          <!--<div
+            class="video-wrapper lang-video"
+            data-lang="ml"
+            style="display: none"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/MALAYALAM_VIDEO_ID"
+              title="Malayalam Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>-->
+          <div
+            class="lang"
+            data-en="<h2>Video with supportive Sign Language</h2>"
+          ></div>
+        </section>
+
+        <!-- Audio Section -->
+        <!--<section id="audioSection" class="tab-content" style="display: none">
+          <audio
+            id="audio-en"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source
+              src="#nil"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+
+          <audio
+            id="audio-hi"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source
+              src="#nil"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+
+          <audio
+            id="audio-ml"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source
+              src="#nil"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </section>-->
+
+        <!-- FOOTER -->
+        <!--<footer class="site-footer">
+          <div class="footer-left">
+            <img src="#nil" alt="ASI Logo" class="asi-footer-logo" />
+          </div>
+          <p
+            class="lang"
+            data-en="© Your Organisation Name | All Rights Reserved"
+            data-hi="© अधीक्षण पुरातत्वविद्, भारतीय पुरातत्व सर्वेक्षण, गोवा मंडल | सर्वाधिकार सुरक्षित"
+          >
+            © Your Organisation Name | All Rights Reserved
+          </p>
+        </footer>-->
+      </div>
+      <!-- parchment-container end -->
+    </div>
+    <!-- page-background end -->
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>
