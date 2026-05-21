@@ -1,0 +1,359 @@
+<!--ASI Heritage QR System Copyright © Ashish Bindal Licensed under GPL v3-->
+<!--Copyright Reserved by SoftTech-->
+<!--Code Designed by © Ashish Bindal on 12/01/2026-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sree Padmanabhaswamy Temple</title>
+    <link rel="stylesheet" href="style_file.css" />
+
+    <!-- SITE ICON -->
+    <link rel="icon" href="Image_Padmanabhaswamy_Temple/Museum.jpg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="Image_Padmanabhaswamy_Temple/Museum.jpg"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- OUTER WHITE BACKGROUND -->
+    <div class="page-background">
+      <!-- INNER PARCHMENT BACKGROUND CONTAINER -->
+      <div class="parchment-container">
+        <div class="language-dropdown">
+          <select class="lang-select" onchange="setLanguage(this.value)">
+            <option value="">🌐 Select Language</option>
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="ml">മലയാളം</option>
+          </select>
+        </div>
+        <!-- HEADER -->
+        <header>
+          <h1
+            class="lang"
+            data-en="Sree Padmanabhaswamy Temple"
+            data-hi="श्री पद्मनाभस्वामी मंदिर"
+            data-ml="ശ്രീ പത്മനാഭസ്വാമി ക്ഷേത്രം"
+          >
+            Sree Padmanabhaswamy Temple
+          </h1>
+          <p
+            class="subtitle lang"
+            data-en="An Enduring Symbol of Devotion and Tradition, Kerala"
+            data-hi="भक्ति और परंपरा का चिरस्थायी प्रतीक, केरल"
+            data-ml="ഭക്തിയുടെയും പാരമ്പര്യത്തിന്റെയും ശാശ്വത പ്രതീകം, കേരളം"
+          >
+            An Enduring Symbol of Devotion and Tradition, Kerala
+          </p>
+        </header>
+
+        <!--ASI STYLE IMAGE SLIDER -->
+        <div class="slider-container">
+          <div class="asi-slider">
+            <div class="slide fade">
+              <img src="Image_Padmanabhaswamy_Temple/1.webp" alt="banner" />
+            </div>
+
+            <div class="slide fade">
+              <img src="Image_Padmanabhaswamy_Temple/2.webp" alt="banner" />
+            </div>
+
+            <!-- Next / Prev Arrows -->
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+
+          <!-- Dots -->
+          <div class="slider-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
+
+        <!-- Small Button Group -->
+        <div class="small-btn-group">
+          <button class="small-btn" onclick="showSection('aboutSection')">
+            About
+          </button>
+          <!--<button class="small-btn" onclick="showSection('pdfSection')">
+            Brochure
+          </button>-->
+          <button class="small-btn" onclick="showSection('gallerySection')">
+            Gallery
+          </button>
+          <button class="small-btn" onclick="showSection('videoSection')">
+            Videos
+          </button>
+          <!--<button class="small-btn" onclick="showSection('audioSection')">
+            Audio
+          </button>-->
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <section id="aboutSection" class="tab-content" style="display: none">
+          <div
+            class="lang"
+            data-en="<p>The Padmanabhaswamy Temple is a Hindu temple dedicated to Vishnu in Thiruvananthapuram, the capital of the state of Kerala, India. 
+              It is one of the 108 Divya Desams that are considered among the most sacred abodes of Vishnu in the Sri Vaishnava tradition. The name of the 
+              city it stands on, Thiruvananthapuram, is also known as 'The City of Ananta'. The principal deity is Padmanabhaswamy, meaning “the one who rests 
+              on the lotus”, a form of Vishnu enshrined in the 'Anantashayana' posture, engaged in eternal yogic sleep on his serpent mount named Shesha.</p>
+
+            <p>The origins of the temple date back over a thousand years, with references found in ancient texts, inscriptions, and devotional literature. 
+              While the temple existed in earlier forms, its present structure was developed and expanded under the patronage of the Travancore royal family. 
+              In 1750 CE, Maharaja Anizham Thirunal Marthanda Varma dedicated the kingdom of Travancore to Lord Padmanabha, declaring himself merely a servant 
+              of the deity. From that moment, the rulers governed as Padmanabha Dasa, or servants of the Lord, a tradition that continues symbolically even today.</p>
+
+            <p>The temple is built in an intricate fusion of the Kerala style and the Dravidian style of architecture, featuring high walls, and a 16th-century gopuram. 
+              The towering seven-tiered gopuram at the eastern entrance reflects Dravidian influence, while the rest of the temple complex follows traditional Kerala temple 
+              design, with sloping roofs, wooden carvings, and stone structures to withstand Kerala’s climate. The temple walls and corridors are adorned with detailed murals 
+              depicting scenes from Hindu epics such as the Ramayana and Bhagavata Purana, created using natural mineral and vegetable pigments that have survived centuries.</p>
+
+            <p>Inside the sanctum, the idol of Lord Padmanabha is unique and inspiring. Made from a sacred composite known as Katusarkara Yogam, the deity is viewed through three 
+              doors, revealing the head, torso, and feet separately. This form emphasizes the cosmic nature of Vishnu, beyond ordinary human perception. The serene atmosphere within 
+              the sanctum reflects centuries of uninterrupted worship and strict ritual discipline.</p>
+
+           <p> The temple is equally renowned for its rituals and traditions, which are followed with exceptional precision according to ancient Tantric and Vedic practices. 
+            The temple complex includes sacred tanks, subsidiary shrines, ceremonial halls, and designated pathways for rituals and processions. Daily worship includes elaborate 
+            offerings, recitations, and ceremonies conducted by trained priests. Major festivals such as Alpashy and Panguni Utsavam, along with the grand Lakshadeepam, attract 
+            devotees from across the world.</p>
+
+            <p>In modern times, the temple gained global attention due to the discovery of vast treasures stored in its underground vaults. These vaults contain invaluable historical 
+              artifacts, gold ornaments, coins, and offerings accumulated over centuries. Vault B holds a distinct status due to its strong religious significance. It is secured by 
+              massive doors and is traditionally believed to be protected by ancient rituals and symbolic guardianship. According to long-standing temple customs and beliefs, this 
+              vault is not considered a treasury but a sacred chamber directly associated with the deity. Beyond their material value, these treasures reflect the long-standing devotion, 
+              prosperity, and cultural heritage associated with the temple.</p>
+              
+            <p>Despite modern developments around it, the Padmanabhaswamy Temple remains a place of profound spiritual discipline. Strict dress codes and entry rules preserve the sanctity 
+              and traditional character of the temple. Padmanabhaswamy is the tutelary deity of the Travancore royal family. The titular Maharaja of Travancore, Moolam Thirunal Rama Varma, 
+              is the current trustee of the temple.</p>"
+
+            data-hi="<p>पद्मनाभस्वामी मंदिर भारत के केरल राज्य की राजधानी तिरुवनंतपुरम में स्थित भगवान विष्णु को समर्पित एक प्रमुख हिंदू मंदिर है। यह श्रीवैष्णव परंपरा में भगवान विष्णु के 108 दिव्य देशमों में से एक है, जिन्हें विष्णु के 
+              सबसे पवित्र निवास स्थलों में माना जाता है। जिस नगर में यह मंदिर स्थित है, तिरुवनंतपुरम, उसे “अनंत का नगर” भी कहा जाता है। मंदिर के प्रधान देवता पद्मनाभस्वामी हैं, जिसका अर्थ है “कमल पर शयन करने वाले”, जो भगवान 
+              विष्णु का ही एक स्वरूप हैं। वे यहाँ “अनंतशयन” मुद्रा में प्रतिष्ठित हैं, जहाँ वे अपने नाग वाहन शेष पर शाश्वत योगनिद्रा में लीन हैं।</p>
+              
+              <p>मंदिर की उत्पत्ति एक हजार वर्ष से भी अधिक पुरानी मानी जाती है, जिसका उल्लेख प्राचीन ग्रंथों, शिलालेखों और भक्ति साहित्य में मिलता है। यद्यपि मंदिर पहले भी विभिन्न रूपों में विद्यमान था, इसकी वर्तमान संरचना का विकास 
+                और विस्तार त्रावणकोर के राजपरिवार के संरक्षण में हुआ। सन 1750 ईस्वी में महाराजा अनिझम तिरुनाल मार्तंड वर्मा ने त्रावणकोर राज्य को भगवान पद्मनाभ को समर्पित कर दिया और स्वयं को केवल देवता का सेवक घोषित किया। 
+                तभी से शासकों ने “पद्मनाभ दास”, अर्थात् भगवान के सेवक के रूप में शासन किया, और यह परंपरा आज भी प्रतीकात्मक रूप से जारी है।<p/>
+
+              <p>यह मंदिर केरल शैली और द्रविड़ शैली की वास्तुकला का एक सुंदर और जटिल समन्वय है। इसमें ऊँची प्राचीरें और 16वीं शताब्दी का एक भव्य गोपुरम है। पूर्वी प्रवेश द्वार पर स्थित सात-स्तरीय गोपुरम द्रविड़ स्थापत्य प्रभाव को दर्शाता है, 
+                जबकि शेष मंदिर परिसर पारंपरिक केरल मंदिर वास्तुकला का अनुसरण करता है, जिसमें ढलवाँ छतें, लकड़ी की नक्काशी और पत्थर की संरचनाएँ शामिल हैं, जो केरल की जलवायु के अनुकूल हैं। मंदिर की दीवारें और गलियारे रामायण और 
+                भागवत पुराण जैसे हिंदू महाकाव्यों के दृश्यों को दर्शाने वाले सुंदर भित्तिचित्रों से सुसज्जित हैं, जिन्हें प्राकृतिक खनिज और वनस्पति रंगों से बनाया गया है और जो सदियों से सुरक्षित हैं।</p>
+
+              <p>गर्भगृह के भीतर भगवान पद्मनाभ की प्रतिमा अत्यंत विशिष्ट और प्रेरणादायक है। यह प्रतिमा ‘कटुशर्करा योगम्’ नामक एक पवित्र मिश्रण से निर्मित है। देवता के दर्शन तीन अलग-अलग द्वारों से होते हैं, जिनमें सिर, धड़ और चरण अलग-अलग 
+                दिखाई देते हैं। यह स्वरूप भगवान विष्णु के ब्रह्मांडीय स्वरूप को दर्शाता है, जो सामान्य मानव अनुभूति से परे है। गर्भगृह का शांत वातावरण सदियों से चली आ रही अखंड उपासना और कठोर अनुष्ठानिक अनुशासन को प्रतिबिंबित करता है।</p>
+
+              <p>यह मंदिर अपनी कठोर और प्राचीन तांत्रिक तथा वैदिक परंपराओं के अनुसार निभाए जाने वाले अनुष्ठानों और परंपराओं के लिए भी प्रसिद्ध है। मंदिर परिसर में पवित्र सरोवर, सहायक उपमंदिर, अनुष्ठान मंडप और जुलूसों के लिए निर्धारित मार्ग 
+                शामिल हैं। प्रतिदिन की पूजा में विस्तृत अर्चनाएँ, मंत्रोच्चारण और प्रशिक्षित पुजारियों द्वारा संपन्न किए जाने वाले अनुष्ठान सम्मिलित हैं। अल्पाशी और पंगुनी उत्सव जैसे प्रमुख पर्वों के साथ-साथ भव्य लक्षदीपम उत्सव विश्व भर से श्रद्धालुओं को आकर्षित 
+                करता है।</p>
+
+              <p>आधुनिक काल में यह मंदिर अपने भूमिगत कोषागारों में संग्रहीत विशाल खजाने के कारण वैश्विक स्तर पर चर्चित हुआ। इन कोषागारों में सदियों से एकत्र किए गए अमूल्य ऐतिहासिक धरोहरें, स्वर्ण आभूषण, सिक्के और भेंट स्वरूप अर्पित वस्तुएँ 
+                सुरक्षित हैं। इनमें ‘वॉल्ट बी’ को विशेष धार्मिक महत्व प्राप्त है। यह भारी द्वारों से सुरक्षित है और परंपरागत रूप से इसे प्राचीन अनुष्ठानों और प्रतीकात्मक संरक्षण द्वारा सुरक्षित माना जाता है। लंबे समय से चली आ रही मंदिर परंपराओं और मान्यताओं 
+                के अनुसार, इस कोषागार को धनागार नहीं बल्कि सीधे देवता से जुड़ा एक पवित्र कक्ष माना जाता है। इन खजानों का महत्व केवल भौतिक नहीं है, बल्कि वे मंदिर से जुड़ी दीर्घकालीन भक्ति, समृद्धि और सांस्कृतिक विरासत को भी दर्शाते हैं।</p>
+              
+              <p>आधुनिक विकासों के बावजूद, पद्मनाभस्वामी मंदिर आज भी गहन आध्यात्मिक अनुशासन का केंद्र बना हुआ है। सख्त वस्त्र संहिता और प्रवेश नियम मंदिर की पवित्रता और पारंपरिक स्वरूप की रक्षा करते हैं। भगवान पद्मनाभ त्रावणकोर राजपरिवार 
+                के आराध्य देवता हैं। त्रावणकोर के वर्तमान नाममात्र महाराजा, मूलम तिरुनाल राम वर्मा, इस मंदिर के वर्तमान न्यासी हैं।</p>"
+
+            data-ml="<p>പദ്മനാഭസ്വാമി ക്ഷേത്രം ഇന്ത്യയിലെ കേരള സംസ്ഥാനത്തിന്റെ തലസ്ഥാനമായ തിരുവനന്തപുരം നഗരത്തിൽ സ്ഥിതിചെയ്യുന്ന, ഭഗവാൻ വിഷ്ണുവിന് സമർപ്പിച്ചിരിക്കുന്ന ഒരു പ്രധാന 
+              ഹിന്ദു ക്ഷേത്രമാണ്. ശ്രീവൈഷ്ണവ പരമ്പരയിൽ വിഷ്ണുവിന്റെ ഏറ്റവും വിശുദ്ധമായ വാസസ്ഥലങ്ങളായി കണക്കാക്കപ്പെടുന്ന 108 ദിവ്യദേശങ്ങളിൽ ഒന്നാണ് ഈ ക്ഷേത്രം. ഈ ക്ഷേത്രം നിലകൊള്ളുന്ന 
+              തിരുവനന്തപുരം നഗരം “അനന്തന്റെ നഗരം” എന്നും അറിയപ്പെടുന്നു. പ്രധാന ദേവതയായ പത്മനാഭസ്വാമി എന്നത് “താമരയിൽ ശയിക്കുന്നവൻ” എന്നർത്ഥമുള്ള, ഭഗവാൻ വിഷ്ണുവിന്റെ ഒരു രൂപമാണ്. 
+              ശേഷനാഗത്തെ ആശ്രയിച്ച് ശാശ്വത യോഗനിദ്രയിൽ ലീനനായ “അനന്തശയന” ഭാവത്തിലാണ് ദേവൻ ഇവിടെ പ്രതിഷ്ഠിച്ചിരിക്കുന്നത്.</p>
+              
+              <p>ഈ ക്ഷേത്രത്തിന്റെ ഉത്ഭവം ആയിരം വർഷത്തിലധികം പഴക്കമുള്ളതാണെന്ന് പുരാതന ഗ്രന്ഥങ്ങൾ, ശിലാലിഖിതങ്ങൾ, ഭക്തിസാഹിത്യം എന്നിവയിൽ പരാമർശിക്കുന്നു. ക്ഷേത്രം മുൻകാലങ്ങളിലും 
+                വിവിധ രൂപങ്ങളിൽ നിലനിന്നിരുന്നുവെങ്കിലും, ഇന്നത്തെ ഘടനയുടെ വികസനവും വിപുലീകരണവും തിരുവിതാംകൂർ രാജകുടുംബത്തിന്റെ സംരക്ഷണത്തിലാണ് നടന്നത്. ക്രി.വ. 1750-ൽ മഹാരാജാ 
+                അനിഴം തിരുനാൾ മാർത്താണ്ഡ വർമ്മ തിരുവിതാംകൂർ രാജ്യം ഭഗവാൻ പത്മനാഭനു സമർപ്പിക്കുകയും താനെ ഒരു ദാസൻ മാത്രമാണെന്ന് പ്രഖ്യാപിക്കുകയും ചെയ്തു. അതിനുശേഷം രാജാക്കന്മാർ “പത്മനാഭ ദാസൻ” 
+                എന്ന നിലയിൽ ഭരണം നടത്തിയതും ഈ പരമ്പര ഇന്ന് വരെ പ്രതീകാത്മകമായി തുടരുന്നതുമാണ്.</p>
+
+              <p>കേരള ശൈലിയും ദ്രാവിഡ ശൈലിയും സമന്വയിപ്പിച്ച സങ്കീർണ്ണവും മനോഹരവുമായ ശില്പകലയിലാണ് ക്ഷേത്രം നിർമ്മിച്ചിരിക്കുന്നത്. ഉയർന്ന മതിലുകളും 16-ാം നൂറ്റാണ്ടിലെ ഒരു ഭംഗിയാർന്ന ഗോപുരവും ഇതിന്റെ 
+                സവിശേഷതകളാണ്. കിഴക്കേ പ്രവേശന കവാടത്തിലെ ഏഴുനിലകളുള്ള ഗോപുരം ദ്രാവിഡ ശൈലിയുടെ സ്വാധീനം പ്രകടിപ്പിക്കുന്നു. അതേസമയം, ശേഷിക്കുന്ന ക്ഷേത്രസമുച്ചയം കേരളത്തിലെ പരമ്പരാഗത ക്ഷേത്രശില്പശൈലി 
+                പിന്തുടരുന്നു. ചരിഞ്ഞ മേൽക്കൂരകൾ, മരക്കൊത്തുപണികൾ, കല്ലുകൊണ്ടുള്ള ഘടനകൾ എന്നിവ കേരളത്തിന്റെ കാലാവസ്ഥയെ അതിജീവിക്കാൻ രൂപകൽപ്പന ചെയ്തതാണ്. രാമായണം, ഭാഗവതപുരാണം തുടങ്ങിയ ഹിന്ദു 
+                ഇതിഹാസങ്ങളിലെ ദൃശ്യങ്ങൾ ആവിഷ്‌കരിച്ച മനോഹരമായ ചുമർചിത്രങ്ങൾ ക്ഷേത്രഭിത്തികളിലും ഇടനാഴികളിലും കാണാം. സ്വാഭാവിക ഖനിജവും സസ്യവർണ്ണങ്ങളും ഉപയോഗിച്ചാണ് ഇവ വരച്ചിരിക്കുന്നത്, നൂറ്റാണ്ടുകളായി 
+                അവ സംരക്ഷിക്കപ്പെട്ടിരിക്കുന്നു.</p>
+
+              <p>ഗർഭഗൃഹത്തിനുള്ളിലെ ഭഗവാൻ പത്മനാഭന്റെ വിഗ്രഹം അതുല്യവും പ്രചോദനാത്മകവുമാണ്. “കടുസർക്കര യോഗം” എന്നറിയപ്പെടുന്ന ഒരു വിശുദ്ധ സംയുക്ത വസ്തുവിൽ നിന്നാണ് ഈ വിഗ്രഹം നിർമ്മിച്ചിരിക്കുന്നത്. 
+                ദേവന്റെ ദർശനം മൂന്ന് വാതിലുകളിലൂടെയാണ് നടത്തുന്നത്; തല, ശരീരം, പാദങ്ങൾ എന്നിങ്ങനെ വേർതിരിച്ചാണ് അവ കാണപ്പെടുന്നത്. ഈ രൂപം സാധാരണ മനുഷ്യബോധത്തെ അതിജീവിക്കുന്ന വിഷ്ണുവിന്റെ ബ്രഹ്മാണ്ഡീയ 
+                സ്വഭാവത്തെ പ്രതിഫലിപ്പിക്കുന്നു. ഗർഭഗൃഹത്തിലെ ശാന്തമായ അന്തരീക്ഷം നൂറ്റാണ്ടുകളായി തുടരുന്ന അഖണ്ഡ ആരാധനയെയും കർശനമായ ആചാരാനുഷ്ഠാനങ്ങളെയും പ്രതിഫലിപ്പിക്കുന്നു.</p>
+
+              <p>പുരാതന താന്ത്രികവും വൈദികവുമായ ആചാരങ്ങൾ അതീവ കൃത്യതയോടെ അനുഷ്ഠിക്കുന്നതിലൂടെ ഈ ക്ഷേത്രം പ്രസിദ്ധമാണ്. ക്ഷേത്രസമുച്ചയത്തിൽ പുണ്യകുളങ്ങൾ, ഉപക്ഷേത്രങ്ങൾ, ചടങ്ങുകൾക്കായുള്ള മണ്ഡപങ്ങൾ, 
+                ഉത്സവങ്ങളുടെയും ഘോഷയാത്രകളുടെയും നിശ്ചിത പാതകൾ എന്നിവ ഉൾപ്പെടുന്നു. പ്രതിദിന ആരാധനയിൽ വിശദമായ നിവേദ്യങ്ങൾ, മന്ത്രോച്ചാരണം, പരിശീലനം നേടിയ പുരോഹിതർ നടത്തുന്ന ആചാരങ്ങൾ എന്നിവ ഉൾപ്പെടുന്നു. 
+                അൽപാശി, പങ്ങുനി ഉത്സവങ്ങൾ, മഹത്തായ ലക്ഷദീപം എന്നിവ ലോകത്തിന്റെ വിവിധ ഭാഗങ്ങളിൽ നിന്നുള്ള ഭക്തരെ ആകർഷിക്കുന്നു.</p>
+
+              <p>ആധുനികകാലത്ത് ക്ഷേത്രത്തിന്റെ ഭൂഗർഭനിലകളിൽ സൂക്ഷിച്ചിരിക്കുന്ന മഹത്തായ നിധികൾ കണ്ടെത്തപ്പെട്ടതോടെ ഇത് ആഗോള ശ്രദ്ധ നേടുകയുണ്ടായി. ഈ നിധികളിൽ നൂറ്റാണ്ടുകളായി സമാഹരിച്ച അമൂല്യമായ ചരിത്രാവശിഷ്ടങ്ങൾ, 
+                സ്വർണ്ണാഭരണങ്ങൾ, നാണയങ്ങൾ, ഭക്തർ സമർപ്പിച്ച വസ്തുക്കൾ എന്നിവ ഉൾപ്പെടുന്നു. ഇവയിൽ “വാൾട്ട് ബി” എന്നറിയപ്പെടുന്ന ഭാഗത്തിന് പ്രത്യേകമായ മതപരമായ പ്രാധാന്യമുണ്ട്. ഭാരമേറിയ വാതിലുകളാൽ സംരക്ഷിക്കപ്പെട്ടിരിക്കുന്ന ഈ വാൾട്ട്, 
+                പുരാതന ആചാരങ്ങളാലും പ്രതീകാത്മക സംരക്ഷണത്താലും കാക്കപ്പെടുന്നു എന്നാണ് വിശ്വാസം. ദീർഘകാലമായി നിലനിൽക്കുന്ന ക്ഷേത്രപരമ്പരകളും വിശ്വാസങ്ങളും പ്രകാരം, ഇത് ഒരു നിധിശാലയായി കണക്കാക്കുന്നില്ല; മറിച്ച് ദേവനുമായി 
+                നേരിട്ട് ബന്ധപ്പെട്ട ഒരു പുണ്യകക്ഷിയാണിത്. ഈ നിധികളുടെ മൂല്യം ഭൗതികതയെക്കാൾ അതീതമായി, ക്ഷേത്രവുമായി ബന്ധപ്പെട്ട ദീർഘകാല ഭക്തിയും സമൃദ്ധിയും സാംസ്കാരിക പൈതൃകവും പ്രതിഫലിപ്പിക്കുന്നു.</p>
+
+              <p>ആധുനിക വികസനങ്ങൾ ചുറ്റിപ്പറ്റിയുണ്ടായിരുന്നാലും, പദ്മനാഭസ്വാമി ക്ഷേത്രം ഇന്നും ആഴമേറിയ ആത്മീയ ശാസനയുടെ കേന്ദ്രമായി തുടരുന്നു. കർശനമായ വസ്ത്രനിയമങ്ങളും പ്രവേശനനിയമങ്ങളും ക്ഷേത്രത്തിന്റെ പവിത്രതയും പരമ്പരാഗത 
+                സ്വഭാവവും സംരക്ഷിക്കുന്നു. പദ്മനാഭസ്വാമി തിരുവിതാംകൂർ രാജകുടുംബത്തിന്റെ കുലദേവനാണ്. തിരുവിതാംകൂരിന്റെ ഇപ്പോഴത്തെ നാമമാത്ര മഹാരാജാവായ മൂലം തിരുനാൾ രാമ വർമ്മയാണ് ഈ ക്ഷേത്രത്തിന്റെ നിലവിലെ ട്രസ്റ്റി.</p>">
+              </div>
+        </section>
+
+        <!-- Brochure Section -->
+        <!--<section id="pdfSection" class="tab-content" style="display: none">
+          <a
+            href="#nil"
+            target="_blank"
+            class="view-pdf-btn"
+          >
+            View Brochure
+          </a>
+        </section>-->
+
+        <!-- Gallery Section -->
+        <section id="gallerySection" class="tab-content" style="display: none">
+                    <img src="Image_Padmanabhaswamy_Temple/3.jpg" class="gallery-img" alt="Gallery image 1" />
+                    <img src="Image_Padmanabhaswamy_Temple/4.webp" class="gallery-img" alt="Gallery image 2" />
+                    <img src="Image_Padmanabhaswamy_Temple/5.webp" class="gallery-img" alt="Gallery image 3" />
+                    <img src="Image_Padmanabhaswamy_Temple/6.webp" class="gallery-img" alt="Gallery image 4" />
+                    <img src="Image_Padmanabhaswamy_Temple/7.webp" class="gallery-img" alt="Gallery image 5" />
+                    <img src="Image_Padmanabhaswamy_Temple/8.jpg" class="gallery-img" alt="Gallery image 6" />
+                </section>
+
+                <!-- Lightbox For Gallery Section -->
+        <div id="lightbox" class="lightbox" aria-hidden="true">
+          <button class="lb-close" type="button" aria-label="Close">
+            &times;
+          </button>
+
+          <button
+            class="lb-nav lb-prev"
+            type="button"
+            aria-label="Previous image"
+          >
+            &#10094;
+          </button>
+
+          <img id="lightboxImg" class="lb-img" src="" alt="" />
+
+          <button class="lb-nav lb-next" type="button" aria-label="Next image">
+            &#10095;
+          </button>
+
+          <div class="lb-caption">
+            <span id="lbCount"></span>
+          </div>
+        </div>
+
+        <!-- Videos Section -->
+        <section id="videoSection" class="tab-content" style="display: none">
+          <!-- English Video -->
+          <div class="video-wrapper lang-video" data-lang="en">
+            <iframe
+              src="https://www.youtube.com/embed/XXtYdTVwIDo"
+              title="English Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- Hindi Video -->
+          <!--<div
+            class="video-wrapper lang-video"
+            data-lang="hi"
+            style="display: none"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/HINDI_VIDEO_ID"
+              title="Hindi Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>-->
+
+          <!-- Malayalam Video -->
+          <!--<div
+            class="video-wrapper lang-video"
+            data-lang="ml"
+            style="display: none"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/MALAYALAM_VIDEO_ID"
+              title="Malayalam Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>-->
+          <div
+            class="lang"
+            data-en="<h2>Video with supportive Sign Language</h2>"
+          ></div>
+        </section>
+
+        <!-- Audio Section -->
+        <!--<section id="audioSection" class="tab-content" style="display: none">
+          <audio
+            id="audio-en"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source
+              src="#nil"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+
+          <audio
+            id="audio-hi"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source
+              src="#nil"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+
+          <audio
+            id="audio-ml"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source
+              src="#nil"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </section>-->
+
+        <!-- FOOTER -->
+        <!--<footer class="site-footer">
+          <div class="footer-left">
+            <img src="#nil" alt="ASI Logo" class="asi-footer-logo" />
+          </div>
+          <p
+            class="lang"
+            data-en="© Your Organisation Name | All Rights Reserved"
+            data-hi="© अधीक्षण पुरातत्वविद्, भारतीय पुरातत्व सर्वेक्षण, गोवा मंडल | सर्वाधिकार सुरक्षित"
+          >
+            © Your Organisation Name | All Rights Reserved
+          </p>
+        </footer>-->
+      </div>
+      <!-- parchment-container end -->
+    </div>
+    <!-- page-background end -->
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>
+<!--Code Designed by ASB on 23/01/2026-->
