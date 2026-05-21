@@ -1,0 +1,589 @@
+<!--ASI Heritage QR System Copyright © Ashish Bindal Licensed under GPL v3-->
+<!--Copyright Reserved by SoftTech-->
+<!--Code Designed by © Ashish Bindal on 26/12/2025-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archaeological Museum Of Velha Goa</title>
+    <link rel="stylesheet" href="style_file.css" />
+
+    <!-- SITE ICON -->
+    <link
+      rel="icon"
+      href="Image_Museum_Velha_Goa/Museum.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="Image_Museum_Velha_Goa/Museum.jpg"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- OUTER WHITE BACKGROUND -->
+    <div class="page-background">
+      <!-- INNER PARCHMENT BACKGROUND CONTAINER -->
+      <div class="parchment-container">
+        <div class="language-dropdown">
+          <select class="lang-select" onchange="setLanguage(this.value)">
+            <option value="">🌐 Select Language</option>
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="kok">कोंकणी</option>
+          </select>
+        </div>
+
+        <!-- HEADER -->
+        <header>
+          <h1
+            class="lang"
+            data-en="Archaeological Museum, Velha Goa"
+            data-hi="पुरातत्व संग्रहालय, वेल्हा गोवा"
+            data-kok=" पुरातत्व संग्रहालय, पोरणें गोंय "
+          >
+            Archaeological Museum, Velha Goa
+          </h1>
+        </header>
+
+        <!--ASI STYLE IMAGE SLIDER -->
+        <div class="slider-container">
+          <div class="asi-slider">
+            <div class="slide fade">
+              <img src="Image_Museum_Velha_Goa/1.webp" alt="banner" />
+            </div>
+
+            <!--<div class="slide fade">
+              <img src="#nil" alt="banner" />
+            </div>
+
+            <div class="slide fade">
+              <img src="#nil" alt="banner" />
+            </div>-->
+
+            <!-- Next / Prev Arrows -->
+            <!--<a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>-->
+          </div>
+
+          <!-- Dots -->
+          <!--<div class="slider-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>-->
+        </div>
+
+        <!-- Small Button Group -->
+        <div class="small-btn-group">
+          <button class="small-btn" onclick="showSection('aboutSection')">
+            About
+          </button>
+          <!--<button class="small-btn" onclick="showSection('pdfSection')">
+            Brochure
+          </button>-->
+          <button class="small-btn" onclick="showSection('gallerySection')">
+            Gallery
+          </button>
+          <button class="small-btn" onclick="showSection('videoSection')">
+            Video
+          </button>
+          <!--<button class="small-btn" onclick="showSection('audioSection')">
+            Audio
+          </button>-->
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <section id="aboutSection" class="tab-content" style="display: none">
+          <div
+            class="lang"
+            data-en="<p>The Archaeological Museum, Old Goa, also referred to as Velha 
+                      Goa, is one of the prominent site museums of the Archaeological Survey of India. It was 
+                      established in 1964 in the abandoned Convent of St. Francis of Assisi, a historic
+                      monument that forms part of the group “Churches and Convents of Goa,” inscribed as a 
+                      UNESCO World Heritage Site in 1986.<br>
+
+                      Located about ten kilometres east of Panaji, the state capital of Goa, the museum is 
+                      accessible by road via the National Highway leading to Belgaum and Hubli. The nearest 
+                      railway station is Karmali, situated three kilometres away, and the nearest airports
+                      are Dabolim(24 km) and Mopa(42 km).<br>
+
+                      The museum houses a collection of 726 registered antiquities. These range from the early 
+                      to late medieval period (9th-15th century) and the Portuguese colonial period (1510–1961).
+                      The museum’s exhibits include Hindu and Christian sculptures, hero- and sati-stones, 
+                      portrait paintings of Portuguese viceroys and governors, religious artworks, coins, 
+                      currency, revenue and court fee stamps, wooden and bronze sculptures, and coat of arms 
+                      from the Portuguese era.</p>
+
+                   <p>The museum underwent major reorganisation in 1982, on the eve of the CHOGM Retreat held 
+                    in Goa. A large hall on the left side of the entrance was converted into a gallery with 
+                    reinforced concrete flooring. A new staircase was built at the western end to provide 
+                    access to the upper level, and the entire first floor was relaid with teakwood flooring.
+                    <br>
+                    The ground floor has five galleries and several thematic spaces such as the Queen 
+                    Ketevan Gallery, Vetal display, and Boat Gallery. It also houses an open courtyard, 
+                    offices, reserve collection rooms, and a publication counter. The upper floor has three 
+                    galleries and adjoining corridors with portrait paintings of Portuguese viceroys and 
+                    governors, religious paintings, and wooden sculptures.</p>
+
+                    <p> A 3.6-metre-high bronze statue of Afonso de Albuquerque welcomes visitors at the 
+                    entrance. In the lobby are displays such as a map of early sea routes of explorers, 
+                    a layout of centrally protected monuments in Goa, a map of Goa, a floor plan of the museum, 
+                    an old drawing of the city of Old Goa (1509), photos of centrally protected monuments, 
+                    and a 2.2-metre-high stone statue of Afonso de Albuquerque.<br>
+
+                    Gallery 1 introduces visitors to the museum’s exhibits. It includes a short history of Goa 
+                    displayed as an open book on a pedestal. To the right is a diorama on prehistoric Goa. 
+                    Another section displays the transplantation of the Mahadev temple at Kurdi, highlighting 
+                    salvage archaeology. A conjectural model of the ancient Goan capital Chandor is shown based
+                     on archaeological findings and local legend.</p>
+
+                    <p>A chronological display of Hindu sculptures begins with a bust of Shiva and Parvati 
+                      from the Chalukyan period (7th century CE) and continues with sculptures from the 
+                      Silahara and Kadamba periods. Key objects include a 13th-century Vishnu sculpture 
+                      flanked by Lakshmi and Garuda, a standing Surya figure with attendants, Gajalakshmi, 
+                      Mahishasuramardini, and a headless seated Uma-Mahesvara. Other objects include 
+                      architectural fragments, sati-stones, hero-stones, a Kannada inscription of Vijayanagara 
+                      king Devaraya, and wooden sculptures of Christian saints.<br>
+
+                      The hero-stones are particularly important for their depictions of naval battles, 
+                      which speak to the Kadambas’ maritime strength. One hero-stone depicts a royal figure 
+                      in court with a naval battle scene below.<br> 
+
+                      A significant highlight is a three-metre bronze statue of Luís de Camões, the national 
+                      poet of Portugal, holding the scrolls of Os Lusíadas, a 16th-century epic poem that 
+                      narrates Vasco da Gama’s voyage from Portugal to India and back. The statue was installed 
+                      in 1960, damaged in 1982, and later restored.<br>
+
+                      Gallery 2 features models of temple towers, pillars, and sculptures of Shiva and Nandi. 
+                      Gallery 3 displays seated figures of Ganesha and Uma-Mahesvara, a model of a 16th-century
+                       Portuguese ship, and iron anchors. Gallery 4 focuses on hero- and sati-stones with 
+                       panels commemorating acts of bravery and sacrifice.<br> 
+
+                      A new gallery dedicated to Queen Ketevan was inaugurated on 15 May 2023. The event was 
+                      attended by Smt. Meenakashi Lekhi, Hon’ble Union Minister of State for Culture and 
+                      External Affairs; Mr. Alexander Khvtisiashvili, Deputy Foreign Minister of Georgia; 
+                      Archpriest Archil Khachidze of the Georgian Orthodox Church; Ambassadors from various 
+                      countries; local guests; and media representatives.</p>
+
+                    <p>Gallery 5 houses objects related to the Adil Shahis of Bijapur, including inscriptions 
+                    in Marathi, Arabic, and Persian that mention temple grants, mosque construction, and 
+                    fortifications. A massive stone panel features saints Peter and Paul with a Portuguese 
+                    inscription dated 1644. A niche in the wall contains a stone pillar brought from St. Thomas
+                     Mount, Madras, in 1630, said to contain a piece of the lance that martyred St. Thomas the 
+                     Apostle. The pillar also features painted images of St. Thomas and St. Francis of Assisi. 
+                     At the centre of the courtyard on the ground floor, is a life-size statue of St. Catherine 
+                     beneath a traditional Goan-style canopy. The courtyard includes a lawn, paved pathways, 
+                     and decorative grills.</p>
+
+                    <p>A list of all Portuguese governors and viceroys from 1505 to 1961 is displayed on the 
+                        western wall of the staircase leading to the upper floor.<br>
+
+                        Gallery 6 displays portraits from the 16th and 17th centuries, Gallery 7 from the 17th 
+                        and 18th centuries, and Gallery 8 from the 18th to 20th centuries. At the entrance to 
+                        Gallery 7 is information about the Old Goa Revelations (OGR) project – a collaborative 
+                        initiative between the Archaeological Survey of India, the University of Évora’s 
+                        Hercules Laboratory, and the University of Lisbon’s Faculty of Fine Arts.</p>
+
+                    <p>The tradition of portrait painting began under Viceroy Dom João de Castro (1545–1548), 
+                        who had portraits of himself and his 12 predecessors made. The tradition continued 
+                        until the end of Portuguese rule in 1961. The paintings, made by local artists in oil 
+                        on wood or canvas, were originally displayed in government residences. They were 
+                        transferred to the museum in 1962 from the Secretariat in Panaji. Each portrait is 
+                        labelled with the name and term of office and mounted behind protective wooden 
+                        railings. The collection reflects changing styles of dress, coats of arms, and facial 
+                        features.</p>
+
+                        <p>
+                            <h2> Important Information </h2>
+                        The museum includes a publication counter and video presentations on World Heritage 
+                            Sites and Monuments. It is open to visitors from 9:00 AM to 5:00 PM every day 
+                            except Friday. Entry is ₹10 per person; children below fifteen years of age are 
+                            admitted free of charge.</p>"
+            data-hi="<p>पुरातत्व संग्रहालय, पुराना गोवा, जिसे वेल्हा गोवा भी कहा जाता है, भारतीय पुरातत्व सर्वेक्षण के प्रमुख 
+                            स्थल संग्रहालयों में से एक है। इसे 1964 में सेंट फ्रांसिस ऑफ असीसी के परित्यक्त कॉन्वेंट में स्थापित किया गया 
+                            था, जो एक ऐतिहासिक स्मारक है जो ” चर्चेज एण्ड कान्वेन्ट ऑफ गोवा” के नाम से सन 1986 मे विश्व धरोहर 
+                            सूची मे नामांकित स्थल का हिस्सा है।<br>
+                            
+                            गोवा की राजधानी पणजी से लगभग दस किलोमीटर पूर्व में स्थित यह  संग्रहालय बेलगाम और हुबली की ओर 
+                            जाने वाले राष्ट्रीय राजमार्ग के माध्यम से सड़क मार्ग से जुड़ा हुआ है। निकटतम रेलवे स्टेशन करमाली है, जो तीन 
+                            किलोमीटर दूर है, और निकटतम हवाई अड्डे डाबोलिम (24 किमी) और मोपा (42 किमी) हैं।<br>
+
+                            संग्रहालय में 726 पंजीकृत प्राचीन वस्तुओं का संग्रह है। ये प्रारंभिक से उत्तर मध्ययुगीन काल (9वीं-15वीं 
+                            शताब्दी) और पुर्तगाली औपनिवेशिक काल (1510-1961) तक की हैं। संग्रहालय के प्रदर्शनों में हिंदू और 
+                            ईसाई मूर्तियां, वीर ऐव सती-पत्थर, पुर्तगाली वाइसराय और गवर्नरों के चित्र, धार्मिक कलाकृतियां, सिक्के, 
+                            मुद्रा, राजस्व और कोर्ट फीस स्टाम्प , लकड़ी और कांस्य मूर्तियां, और पुर्तगाली युग के “कोट ऑफ़ आर्म्स” 
+                            शामिल हैं।</p>
+
+                            <p>इस संग्रहालय को सन्न 1982 में राष्ट्रद्धयक्षों को कॉमनवेल्थ सम्मेलन हेतु पुनर्गठित  किया गया था । प्रवेश 
+                                द्वार के बाईं ओर एक बड़ा हॉल एक गैलरी में परिवर्तित किया गया था। ऊपरी स्तर तक पहुंच प्रदान 
+                                करने के लिए पश्चिमी छोर पर एक नई सीढ़ी बनाई गई, और पूरी पहली मंजिल को सागौन की फर्श से 
+                                बनाया गया।<br>
+
+                                भूतल पर पांच गैलरी और कई विषयगत स्थान हैं जैसे कि रानी केतेवान गैलरी, वेताल प्रदर्शन, और नाव 
+                                गैलरी। इस तल पर खुला आंगन, कार्यालय, आरक्षित संग्रह कक्ष, और एक प्रकाशन काउंटर भी है। 
+                                ऊपरी मंजिल पर तीन गैलरी और आसन्न गलियारे हैं जिनमें पुर्तगाली वाइसराय और गवर्नरों के चित्र, 
+                                धार्मिक चित्र, और लकड़ी की मूर्तियां हैं।</p>
+
+                            <p>प्रवेश द्वार पर आगंतुकों का स्वागत 3.6 मीटर ऊंची अफोंसो डी अल्बुकर्क की कांस्य प्रतिमा से होता है। 
+                                लॉबी में प्रारंभिक समुद्री मार्गों का नक्शा, गोवा में केंद्रीय रूप से संरक्षित स्मारकों का मॉडल, गोवा का 
+                                नक्शा, संग्रहालय की योजना, पुराने गोवा शहर का एक पुराना चित्र (1509), केंद्रीय रूप से संरक्षित स्मारकों 
+                                की तस्वीरें, और अफोंसो डी अल्बुकर्क की 2.2 मीटर ऊंची पत्थर की प्रतिमा जैसे प्रदर्शन हैं।<br>
+
+                                गैलरी 1 आगंतुकों को संग्रहालय के प्रदर्शों से परिचित कराती है। इसमें गोवा का संक्षिप्त इतिहास पेडस्टल
+                                 पर एक खुले पुस्तक के रूप में प्रदर्शित है। दाईं ओर प्रागैतिहासिक गोवा पर एक डायोरामा है। एक 
+                                 अन्य खंड कुर्डी में महादेव मंदिर के प्रत्यारोपण को प्रदर्शित करता है, जो पुरातत्व के बचाओ कार्य  
+                                 को उजागर करता है। प्राचीन गोवा की राजधानी चांदोर का एक अनुमानित मॉडल पुरातात्विक खोजों 
+                                 और स्थानीय किंवदंती के आधार पर दिखाया गया है।</p>
+
+                            <p>हिंदू मूर्तियों का कालानुक्रमिक प्रदर्शन चालुक्य काल (7वीं शताब्दी ईस्वी) से शिव और पार्वती की  
+                                अर्ध-प्रतिमा से शुरू होता है और सिलाहार और कदंब काल की मूर्तियों को दर्शाता है। प्रमुख वस्तुओं 
+                                में 13वीं शताब्दी की विष्णु की मूर्ति शामिल है, जिसके दोनों ओर लक्ष्मी और गरुड़ हैं, एक खड़े सूर्य 
+                                की आकृति जिसमें परिचारक हैं, गजलक्ष्मी, महिषासुरमर्दिनी, और एक शीषरहित बैठी उमा-महेश्वर की 
+                                मूर्ति है। अन्य वस्तुओं में वास्तुकला के खंड, सती-शिला, वीर-शिला , विजयनगर के राजा देवराय का 
+                                कन्नड़ अभिलेख, और ईसाई संतों की लकड़ी की मूर्तियां शामिल हैं।<br>
+
+                                वीर शिला विशेष रूप से समुद्री लड़ाइयों के चित्रण के लिए महत्वपूर्ण हैं, जो कदंबों की समुद्री शक्ति 
+                                को दर्शाता हैं। एक वीर शिला  पर एक शाही आकृति को दरबार में दिखाया गया है, जिसके नीचे एक 
+                                समुद्री युद्ध का दृश्य है।<br>
+
+                                एक महत्वपूर्ण आकर्षण पुर्तगाल के राष्ट्रीय कवि लुइस डी कामोएस की तीन मीटर की कांस्य प्रतिमा है, 
+                                जो “ओएस लुसियाड्स” के स्क्रॉल पकड़े हुए है, जो 16वीं शताब्दी का महाकाव्य  है जिसमे वास्को डी 
+                                गामा की पुर्तगाल से भारत और वापस की यात्रा का वर्णन किया गया है। यह प्रतिमा सन् 1960 में 
+                                स्थापित की गई थी और सन् 1982 में क्षतिग्रस्त हो गई थी, और बाद में इसे पुनः मरमत किया गया।<br>
+
+                                गैलरी 2 में मंदिर के शिखरों , स्तंभों, एवम शिव और नंदी की मूर्तियों को   प्रदर्शित किया गया  हैं। 
+                                गैलरी 3 में  गणेश और उमा-महेश्वर की आकृतियां, 16वीं शताब्दी के पुर्तगाली जहाज का मॉडल, और 
+                                लोहे के लंगर प्रदर्शित किए गए हैं। गैलरी 4 वीर और सती शिलओं पर केंद्रित है, जिसमें वीरता और 
+                                बलिदान के कृत्यों को स्मरण करने वाले पैनल हैं।<br>
+
+                                रानी केतेवान को समर्पित एक नई गैलरी का उद्घाटन 15 मई 2023 को किया गया था। इस अवसर 
+                                पर, माननीय केंद्रीय संस्कृति और विदेश राज्य मंत्री श्रीमती मीनाक्षी लेखी; जॉर्जिया के उप विदेश मंत्री 
+                                श्री अलेक्जेंडर ख्विटिसियाशविली; जॉर्जियाई ऑर्थोडॉक्स चर्च के आर्कप्रीस्ट आर्चिल खचिदज़े; विभिन्न देशों 
+                                के राजदूत; स्थानीय मेहमान और प्रसामाध्यम के प्रतिनिधि उपस्थित थे।</p>
+
+                                <p>गैलरी 5 में बीजापुर के आदिल शाही से संबंधित वस्तुएं हैं, जिनमें मराठी, अरबी और फारसी के 
+                                    अभिलेख शामिल हैं जो मंदिर अनुदान, मस्जिद निर्माण और किलेबंदी का उल्लेख करते हैं। एक 
+                                    विशाल पत्थर खंड पर संत पीटर और पॉल को 1644 की पुर्तगाली अभिलेख के साथ दिखाया गया है। 
+                                    दीवार में एक आले में सन् 1630 में सेंट थॉमस माउंट, मद्रास से लाया गया एक पत्थर का स्तंभ है, 
+                                    जिसमें  एक भले का अंकन है  जिसके बारे मे कहा जाता है की इससे सेंट थॉमस द एपोस्टल की 
+                                    शहादत हुई थी। स्तंभ पर सेंट थॉमस और सेंट फ्रांसिस ऑफ असीसी की आकृतिया भी हैं। भूतल पर 
+                                    आंगन के केंद्र में, पारंपरिक गोवन-शैली के गुंबद के नीचे सेंट कैथरीन की आदमकद प्रतिमा है। 
+                                    आंगन में एक उधान , पक्के रास्ते और सजावटी लोहे की जालियाँ शामिल हैं।</p>
+
+                                <p>ऊपरी मंजिल की ओर जाने वाली सीढ़ी की पश्चिमी दीवार पर सन् 1505 से सन् 1961 तक के सभी 
+                                    पुर्तगाली गवर्नरों और वायसराय की सूची प्रदर्शित की गई है।<br>
+
+                                    गैलरी 6 में 16वीं और 17वीं शताब्दी के चित्र प्रदर्शित किए गए हैं, गैलरी 7 में 17वीं और 18वीं 
+                                    शताब्दी के चित्र हैं, और गैलरी 8 में 18वीं से 20वीं शताब्दी के चित्र हैं। गैलरी 7 के प्रवेश द्वार 
+                                    पर ओल्ड गोवा रेवलेशन्स (OGR) परियोजना के बारे में जानकारी है – यह भारतीय पुरातत्व सर्वेक्षण,
+                                     यूनिवर्सिटी ऑफ इवोरा की हरक्यूलिस प्रयोगशाला और यूनिवर्सिटी ऑफ लिस्बन के ललित कला 
+                                     संकाय के बीच एक सहयोगी पहल है।</p>
+
+                                <p>वायसराय डॉम जोआओ डी कास्त्रो (1545-1548) के तहत चित्रकला की परंपरा शुरू हुई, जिन्होंने 
+                                    खुद के और अपने 12 पूर्ववर्तियों के चित्र बनवाए। यह परंपरा सन् 1961 में पुर्तगाली शासन के 
+                                    अंत तक निरंतर चलती  रही। लकड़ी या कैनवास पर तैलरंगों से स्थानीय कलाकारों द्वारा बनाए 
+                                    गए चित्र मूल रूप से प्रदर्शित किए गए थे। उन्हें सन् 1962 में पणजी के सचिवालय से संग्रहालय 
+                                    में चित्रो को  स्थानांतरित कर दिया गया था। प्रत्येक चित्र पर नाम और कार्यालय की अवधि अंकित 
+                                    है और चित्रो को सुरक्षात्मक लकड़ी की रेलिंग के पीछे लगाया गया है। संग्रह का प्रत्येक चित्र पोशाक,
+                                     हथियार कोट ऑफ आर्म्स की विशेषताओं की बदलती शैलियों को दर्शाता है।</p>
+                                   <p>  
+                                <h2> आवश्यक सूचना </h2>
+                                    संग्रहालय में एक प्रकाशन बिक्री केंद्र और विश्व धरोहर स्थलों और स्मारकों पर जानकारी देने हेतु 
+                                    वृता चित्र दिखने की व्ययवस्था भी है। यह संग्रहालय शुक्रवार को छोड़कर हर दिन सुबह 9:00 बजे 
+                                    से शाम 5:00 बजे तक आगंतुकों के लिए खुला रहता है। प्रवेश शुल्क ₹10 प्रति व्यक्ति है; पंद्रह 
+                                    वर्ष से कम उम्र के बच्चे नि:शुल्क प्रवेश करते हैं।</p>"
+            data-kok="<p>पुरातत्व संग्रहालय, पोरणें गोंय जाका वॅल्हा गोंय अशेंय म्हणटात, हें भारतीय पुरातत्व सर्वेक्षणा
+                                 मदलें एक मुख्य संग्रहालय आसा. 1964 वर्सा सां फ्रान्सिस ऑफ आस्सिसी  हाचो वापर बंद केल्ल्या 
+                                 कॉण्वॅण्टांत ताची स्थापणूक केल्ली. 1986 वर्सा UNESCO संवसारीक दायज थळ म्हणून कोरांतून दवरिल्लें 
+                                 हें एक इतिहासीक स्मारक आसा जें “गोंयच्यो इगर्जीं आनी कॉण्वॅण्टांचो,” एक भाग आसा.<br>
+                                
+                                 बेळगांव आनी हुबळी वचपी राष्ट्रीय म्हामार्गा वरवीं गोंयची राजधानी पणजेचे उदेंतेक धा किलोमिटर अंतराचेर 
+                                 आशिल्ल्या ह्या संग्रहालया कडेन वचूंक मेळटा. करमळी हें लागींचें रेल्वे स्टेशन, जें तीन किलोमिटर अंतराचेर 
+                                 आसा आनी दाबोळी (24 कि.मि.) आनी मोपा (42 कि.मि.) हीं लागशिल्लीं विमानतळां आसात.<br>
+                                 
+                                 ह्या संग्रहालयांत 726 नोंदणीकृत पुरातन वस्तूंचो संग्रह आसा. हातूंत मदल्या काळाचो सुरवेचो आनी 
+                                 शेवटाचो काळ (9 – 15 वो शेंकडो) आनी पुर्तुगेज वसाहत काळ (1510-1961) ह्या काळांतल्या 
+                                 शिल्पकलांचो आसपाव आसा. हिंदू आनी क्रिस्ती शिल्पकला, वीरगळ आनी सती शिळा (Sati Stone),
+                                  पुर्तुगेज व्हायसरॉय आनी गवर्नरांचीं चित्रां, धर्मीक कलाकृती, नाणीं, चलन, महसूल आनी कोर्ट फी 
+                                  स्टॅम्प, लांकडी आनी कांश्याच्यो मुर्ती आनी पुर्तुगेज काळांतलीं शस्त्रां हांचो ह्या संग्रहालयांत आसपाव 
+                                  आसा.</p>
+                                  
+                                  <p>
+                                    1982 वर्सा गोंयांत आयोजीत केल्ल्या CHOGM रिट्रीटच्या आदल्या दिसा संग्रहालयाची व्हड प्रमाणान 
+                                    पुनर्रचणूक जाली. प्रवेश दाराचे दावे वटेन आशिल्ल्या व्हडल्या हॉलाचें मजबूत काँक्रिटाच्यो फरशी 
+                                    बसोवन गॅलरींत रुपांतर केल्लें. वयल्या माळ्यार वच्चें खातीर अस्तंतेक एक नवो जिनो बांदलो आनी 
+                                    पुराय पयल्या माळ्यार फरशी सायल्याचें लांकूड बसोवन बदल्ली.<br>
+
+                                    तळ-माळ्यार पांच गॅलरी आनी विशय आदारीत सुवाती जशे, Queen Ketevan गॅलरी, Vetal 
+                                    प्रदर्शन आनी Boat गॅलरी आसात. तशेंच हातूंत आंगण, कार्यालयां, राखीव संग्रहण कक्ष आनी प्रकाशनांचो 
+                                    कावण्टर आसा. वयल्या माळ्यार तीन गॅलरी आसात आनी ताका जोडून पुर्तुगेज व्हायसरॉय आनी गवर्नरांचीं 
+                                    रंगयल्लीं चित्रां, धर्मीक चित्रां आनी लांकडाच्यो मुर्ती लायिल्लो कॉरिडोर आसा.</p>
+
+                                    <p>
+                                        प्रवेश दाराचेर आफोन्स आल्बुकॅराचो 3.6 मिटर उंचायेचो कांश्याचो पुतळो संग्रहालयाक भेट 
+                                        दिवप्याक येवकार दिता. लॉबींत संशोधकांचो सुरवेचो दर्या मार्गाचो नकासो, गोंयांतल्या केंद्रीय 
+                                        संरक्षीत स्मारकांचो लेआवट, गोंयाचो नकासो, संग्रहालयाची माळ्या प्रमाणें योजना, पोरण्या 
+                                        गोंयाच्या शाराचें पोन्नें चित्र (1509),  गोंयांतल्या केंद्रीय संरक्षीत स्मारकांचे फोटे, आनी आफोन्स
+                                         आल्बुकॅराचो 2.2 मिटर उंचायेचो फातराचो पुतळो अशीं प्रदर्शनां आसात.<br>
+
+                                         गॅलरी 1 भेट दिवप्यांक संग्रहालयाच्या प्रदर्शनाची वळख करून दिता. हातूंत गोंयच्या संक्षिप्त 
+                                         इतिहासाक एका पॅडॅस्टलाचेर उक्त्या पुस्तकाच्या रुपान प्रदर्शीत केला. उजवे वटेन प्राचीन 
+                                         गोंयचेर एक डायरॉमा आसा. दुसर्‍या विभागांत स्थलांतरीत केल्लें कुर्डीचें महादेवाचें देवूळ 
+                                         प्रदर्शीत केलां, जें पुरातत्वशास्त्राचेर उजवाड घालता.  पुरातत्वीय सोद आनी थळावे लोक 
+                                         काणयांचेर आदारीत प्राचीन गोंयची राजधानी चांदराचो एक Conjectrual मॉडेल दाखयला.</p>
+
+                                         <p>
+                                            हिंदू शिल्पकलांचें प्रदर्शन काळ क्रमा प्रमाणें चालुक्य काळांतल्या (इ.स 7वो शेंकडो) शीव आनी पार्वती 
+                                            हांच्या अर्द पुतळ्यां पासून सुरू जाता आनी शिलाहार आनी कदंब काळांतल्या शिल्पाकृतीं मेरेन चालू उरता. 
+                                            मुखेल मुर्ती मदीं लक्ष्मी आनी गरूड शेजराक आशिल्ली 13 व्या शेंकड्यांतली विष्णूची शिल्पकला, सेवकां सयत 
+                                            उबी आशिल्ली सूर्याची मुर्ती, गजलक्ष्मी, महिषासुरमर्दिनी आनी तकली नाशिल्ली बशिल्ली उमा-महेश्वरी ह्या मुर्त्यांचो 
+                                            आसपाव आसा. हेर मुर्त्यां मदीं वास्तुशिल्पकला आशिल्ले कुडके, सती शिळा, विरगळ, विजयनगराचो राजा देवराय 
+                                            हांचे कन्नड शिलालेख आनी क्रिस्ती सांतांच्या शिल्पकलांचो आसपाव आसा.<br>
+
+                                            वीरगळ खास करून तांच्या नौसैनीक झुजाच्या चित्रणा खातीर म्हत्वाचे आसात, जे कदंबच्या समुद्री शक्तीक दर्शयता. 
+                                            एका विरगळाचेर राज दरबारांतली शाही व्यक्ती दाखयल्या आनी ताचे सकयल एक नौसैनीक युद्धाचें दृश्य दाखयलां.<br>
+
+                                            एक म्हत्वाचें आकर्शण म्हणल्यार पुर्तुगेज राष्ट्रीय कवी लुईस दे कामोईस हांची तीन मिटर उंचायेची कांश्याची मुर्ती, जी 16 
+                                            व्या शेंकड्यांतलें म्हाकाव्य ओसल्युसिएड्स धरून आसा, जातूंत वास्को-दा-गामा हांच्या पुर्तुगाल ते भारत आनी परत पुर्तिगालाक
+                                             पावपाचें महाकाव्य आसा. 1960 वर्सा ह्या मुर्तीची स्थापणूक केल्ली, 1982 वर्सा तिची मोडतोड जाली आनी उपरांत परत तिची 
+                                             पुनर्स्थापणूक केली.<br>
+
+                                             गॅलरी 2 त देवळांचे कळस, खांबे आनी शीव आनी नंदीची शिल्पकला हांचे मॉडेल प्रदर्शीत केल्यात. 
+                                             गॅलरी 3 त गणपती आनी उमामहेश्वरी हांची बशिल्ले अवस्थेंतली मुर्ती, 16 व्या शेंकड्यांतले पुर्तुगालच्या 
+                                             जहाजाचें मॉडेल आनी लोखंडाचे नांगर प्रदर्शीत केल्यात. गॅलरी 4 त बलिदान आनी शौर्यगाथा दाखोवपी 
+                                             पॅनला सयत वीरगळ आनी सती शिळांचेर उजवाड घातला.<br>
+                                            
+                                             15 मे 2023 दिसा Queen Ketevan हांकां समर्पीत केल्ले एके गॅलरीचें उक्तावण जालें. ह्या वेळार संस्कृतीक 
+                                             आनी विदेश मंत्री मानादीक केंद्रीय राज्यमंत्री श्रीमती मिनाक्षी लेखी; जॉर्जीयाचें उप विदेश मंत्री श्री. एलॅक्झेंडर 
+                                             ख्वतिसियाश्विली, जॉर्जीयन ऑर्थोडॉक्स चर्चीचे आर्चप्रिस्ट आर्चीलखाचिद्जे; वेगवेगळ्या देशांचे राजदूत; थळावे अतिथी; 
+                                             आनी माध्यमांचे प्रतिनिधी हाजीर आशिल्ले.</p>
+
+                                             <p>
+                                                गॅलरी 5 त बिजापुरच्या आदिलशाहाच्या वंशा संदर्भांतल्यो वस्तू दवरल्यात, जातूंत मराठी, अरबी आनी फारसी भाशेंत 
+                                                बरयल्ले लेख आसपावीत आसात, जे देवळांक दिल्ली देणगी, मशीद बांदकाम आनी किल्ल्यां विशीं माहिती दितात. 
+                                                एका व्हडल्या फातराच्या पॅनलाचेर 1644 तारखेच्या पुर्तुगेज शिलालेखा सयत सां पेद्रू आनी पावलू हांचें चित्र आसा. 
+                                                कोनशाचे वण्टीर 1630 वर्सा सां थॉमी मावण्ट, मद्रासच्यान हाडिल्लो फातराचो खांबो आसा, जातूंत, सां थॉमी द 
+                                                अपोस्ल हांकां ज्या भाल्यांतल्यान मारिल्लो ताचो एक कुडको तातूंत आसा अशें म्हणटात. ह्या खांब्याचेर सां थॉमी 
+                                                आनी सां फ्रांन्सिस ऑफ आस्सिसी हांच्यो चित्रीत प्रतिमा आसात. तळ-माळ्यार आंगणाच्या मदल्या भागांत, गोंयचे 
+                                                परंपारीक शैलींतलो सां काथारिनाचो पुराय आकृती आशिल्लो पुतळो आसा. आंगणांत लॉन, पेवर्स घातिल्ली वाट आनी 
+                                                सोबीत अशे ग्रील्स आसात.</p>
+
+                                                <p>
+                                                    वयल्या माळ्यार वचपी जिन्याचे अस्तंते कडले वण्टीचेर 1505 ते 1961 मेरेनच्या सगळ्या पुर्तुगेज गव्हर्नर आनी 
+                                                    व्हायसरॉयाची वळेरी प्रदर्शीत केल्या.<br>
+
+                                                    गॅलरी 6 त 16 व्या आनी 17 व्या शेंकड्यांतलीं, गॅलरी 7 त 17 व्या आनी 18 व्या शेंकड्यांतलीं, आनी गॅलरी 
+                                                    8 त 18 ते 20 व्या शेंकड्यांतलीं चित्रां प्रदर्शीत केल्यांत. गॅलरी 7 च्या प्रवेश दाराचेर भारतीय पुरातत्व सर्वेक्षण, 
+                                                    इव्होरा विद्यापिठाची हरक्युलस प्रयोगशाळा आनी  लिस्बोवा विद्यापिठाच्या ललीत कला विद्याशाखा हांचो जोडपालव 
+                                                    आशिल्लो उपक्रम ओल्ड गोवा रिव्हॅलेशन्स (OGR) ह्या प्रकल्पा विशीं माहिती आसा.</p>
+                                                
+                                                    <p>
+                                                        व्हायसरॉय डॉम जुवांव कास्त्रो (1545–1548) हांच्या काळा पासून रंगीत चित्रांची परंपरा सुरू जाली, जांणी आपलें 
+                                                        आनी आपल्या पयलींच्या 12 जाणांचीं चित्रां केल्लीं. ही परंपरा पुर्तुगेजांचे 1961 मेरेनचे राजवटी मेरेन चालू उरली. 
+                                                        थळाव्या कलाकारांनी लांकडाचेर वा कॅनव्ह तेल वापरून तयार केल्लीं चित्रां सरकारी निवासस्थानांनी प्रदर्शीत करताले. 
+                                                        1962 वर्सा तीं पणजेच्या सचिवालयांतल्यान सग्रहालयांत स्थलांतरीत केलीं.  दरेकी चित्राचेर नांव आनी कार्यकाळ बरयल्लो 
+                                                        आसा आनी ताका सुरक्षीत लांकडाची फास्की बसयल्या. ह्या संग्रहांत बदलपी भेसाची शैली, चिलखतां, मुखामळाच्यो 
+                                                        विशेशतायो प्रतिबिंबीत जातात.</p>
+
+                                                    <p><h2>महत्वाची माहिती</h2>
+                                                    ग्रहालयांत एक प्रकाशन कावण्टर आनी संवसारीक दायज थळां आनी स्मारकांचेर व्हिडिओ हांचो आसपाव आसा. शुक्रार सोडून 
+                                                    हेर दिसा सकाळीं 9.00 ते सांजेच्या 5.00 वरां मेरेन भोंवडेकारां खातीर उक्तें आसता. दरेकी व्यक्तीक प्रवेशा खातीर 10 रुपया; 
+                                                    जाल्यार पंदरा वर्सां सकयल्ल्या भुरग्यां खातीर फुकट प्रवेश आसा.</p>"
+          ></div>
+        </section>
+
+        <!-- Brochure Section -->
+        <!--<section id="pdfSection" class="tab-content" style="display: none">
+          <a href="#nil" target="_blank" class="view-pdf-btn">
+            View Brochure
+          </a>
+        </section>-->
+
+        <!-- Gallery Section -->
+        <section id="gallerySection" class="tab-content" style="display: none">
+          <img
+            src="Image_Museum_Velha_Goa/2.webp"
+            class="gallery-img"
+            alt="Gallery image 1"
+          />
+          <img
+            src="Image_Museum_Velha_Goa/3.webp"
+            class="gallery-img"
+            alt="Gallery image 2"
+          />
+          <img
+            src="Image_Museum_Velha_Goa/6.webp"
+            class="gallery-img"
+            alt="Gallery image 3"
+          />
+          <img
+            src="Image_Museum_Velha_Goa/4.webp"
+            class="gallery-img"
+            alt="Gallery image 4"
+          />
+          <img
+            src="Image_Museum_Velha_Goa/7.webp"
+            class="gallery-img"
+            alt="Gallery image 5"
+          />
+          <img
+            src="Image_Museum_Velha_Goa/8.webp"
+            class="gallery-img"
+            alt="Gallery image 6"
+          />
+          <img
+            src="Image_Museum_Velha_Goa/9.webp"
+            class="gallery-img"
+            alt="Gallery image 7"
+          />
+          <img
+            src="Image_Museum_Velha_Goa/5.jpeg"
+            class="gallery-img"
+            alt="Gallery image 8"
+          />
+        </section>
+
+        <!-- Lightbox For Gallery Section -->
+        <div id="lightbox" class="lightbox" aria-hidden="true">
+          <button class="lb-close" type="button" aria-label="Close">
+            &times;
+          </button>
+
+          <button
+            class="lb-nav lb-prev"
+            type="button"
+            aria-label="Previous image"
+          >
+            &#10094;
+          </button>
+
+          <img id="lightboxImg" class="lb-img" src="" alt="" />
+
+          <button class="lb-nav lb-next" type="button" aria-label="Next image">
+            &#10095;
+          </button>
+
+          <div class="lb-caption">
+            <span id="lbCount"></span>
+          </div>
+        </div>
+
+        <!-- Videos Section -->
+        <section id="videoSection" class="tab-content" style="display: none">
+          <!-- English Video -->
+          <div class="video-wrapper lang-video" data-lang="en">
+            <iframe
+              src="https://www.youtube.com/embed/BrV4MhABNGs"
+              title="English Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- Hindi Video -->
+          <div
+            class="video-wrapper lang-video"
+            data-lang="hi"
+            style="display: none"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/bS-JgjMVISQ"
+              title="Hindi Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- Konkani Video -->
+          <div
+            class="video-wrapper lang-video"
+            data-lang="kok"
+            style="display: none"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/i3GGUhAmrPg"
+              title="Konkani Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+			<div
+				 class="lang" data-en="<h2>Video with supportive Sign Language</h2>"></div>
+        </section>
+
+        <!--Audio Section-->
+        <!--<section id="audioSection" class="tab-content" style="display: none">
+          <audio
+            id="audio-en"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source src="Audio English Link" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+
+          <audio
+            id="audio-hi"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source
+              src="Audio Hindi Link"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+
+          <audio
+            id="audio-kok"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source src="Audio Konkani Link" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </section>-->
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+          <div class="footer-left">
+            <img
+              src="Image_Museum_Velha_Goa/asi_logo.jpg"
+              alt="ASI Logo"
+              class="asi-footer-logo"
+            />
+          </div>
+          <p
+            class="lang"
+            data-en="© Superintending Archaeologist, ASI Goa Circle | All Rights Reserved"
+            data-hi="© अधीक्षण पुरातत्वविद्, भारतीय पुरातत्व सर्वेक्षण, गोवा मंडल | सर्वाधिकार सुरक्षित"
+            data-kok="© अधीक्षण पुरातत्वविद्, भारतीय पुरातत्व सर्वेक्षण, गोंय मंडळ | सर्व हक्क राखीव"
+          >
+            © Superintending Archaeologist, ASI Goa Circle | All Rights Reserved
+          </p>
+        </footer>
+      </div>
+      <!-- parchment-container end -->
+    </div>
+    <!-- page-background end -->
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>

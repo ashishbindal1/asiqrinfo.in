@@ -1,0 +1,470 @@
+<!--ASI Heritage QR System Copyright © Ashish Bindal Licensed under GPL v3-->
+<!--Copyright Reserved by SoftTech-->
+<!--Code Designed by © Ashish Bindal on 26/12/2025-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fort Aguada</title>
+    <link rel="stylesheet" href="style_file.css" />
+
+    <!-- SITE ICON -->
+    <link rel="icon" href="Image_Fort_Aguada/Museum.jpg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="Image_Fort_Aguada/Museum.jpg"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- OUTER WHITE BACKGROUND -->
+    <div class="page-background">
+      <!-- INNER PARCHMENT BACKGROUND CONTAINER -->
+      <div class="parchment-container">
+        <div class="language-dropdown">
+          <select class="lang-select" onchange="setLanguage(this.value)">
+            <option value="">🌐 Select Language</option>
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="kok">कोंकणी</option>
+          </select>
+        </div>
+
+        <!-- HEADER -->
+        <header>
+          <h1
+            class="lang"
+            data-en="Fort Aguada"
+            data-hi="किला अग्वाड़ा"
+            data-kok="किल्लो आग्वाद "
+          >
+            Fort Aguada
+          </h1>
+          <p
+            class="subtitle lang"
+            data-en="A Centrally Protected Monument of National Importance, Candolim"
+            data-hi="राष्ट्रीय महत्व का केंद्रीय संरक्षित स्मारक, कैंडोलिम"
+            data-kok="राष्ट्रीय महत्त्वाचें केंद्र सरकाराक संरक्षित स्मारक, कॅन्डोलिम"
+          >
+            A Centrally Protected Monument of National Importance, Candolim
+          </p>
+        </header>
+
+        <!--ASI STYLE IMAGE SLIDER -->
+        <div class="slider-container">
+          <div class="asi-slider">
+            <div class="slide fade">
+              <img src="Image_Fort_Aguada/1.webp" alt="banner" />
+            </div>
+
+            <!--<div class="slide fade">
+              <img src="#nil" alt="banner" />
+            </div>
+
+            <div class="slide fade">
+              <img src="#nil" alt="banner" />
+            </div>-->
+
+            <!-- Next / Prev Arrows -->
+            <!--<a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>-->
+          </div>
+
+          <!-- Dots -->
+          <!--<div class="slider-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>-->
+        </div>
+
+        <!-- Small Button Group -->
+        <div class="small-btn-group">
+          <button class="small-btn" onclick="showSection('aboutSection')">
+            About
+          </button>
+          <!--<button class="small-btn" onclick="showSection('pdfSection')">
+            Brochure
+          </button>-->
+          <button class="small-btn" onclick="showSection('gallerySection')">
+            Gallery
+          </button>
+          <button class="small-btn" onclick="showSection('videoSection')">
+            Video
+          </button>
+          <!--<button class="small-btn" onclick="showSection('audioSection')">
+            Audio
+          </button>-->
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <section id="aboutSection" class="tab-content" style="display: none">
+          <div
+            class="lang"
+            data-en="<p>
+                    <h2>Upper Fort, Aguada</h2>
+                    In 1510 C.E., Afonso de Albuquerque conquered the city of Goa (Old Goa) with its natural 
+                    harbours and navigable rivers by driving away the force of Ismail Adilshah (1510 C.E. 
+                    -1534 C.E.), the Sultan of Bijapur. After their firm establishment in Goa, the Portuguese 
+                    faced much opposition from other European invaders like the French, the Dutch and the 
+                    English. The Dutch, who started coming to India in the year 1599 C.E., became the major 
+                    threat to the Portuguese colony in Goa. That necessitated the construction of a fort on 
+                    the mouth of River Mandovi for keeping a strict vigil. Therefore, a fort with an extensive 
+                    circumference around the Aguada plateau was constructed in the year 1612 during the tenure 
+                    of Governor Ruy Lourenco de Tavora (1609 C.E. -1612 C.E.). It was named “Aguada”, meaning 
+                    ‘a place of water’ in Portuguese. Constructed in two segments viz. the upper and lower, 
+                    the upper fort Aguada was known as “Fortaleza Real” i.e. the royal fort, while the lower 
+                    fort Aguada was called as “Praca da Santa Catharina”.<br>
+
+                     Shaped like a star, the upper fort Aguada stands at the height of 260 ft. above sea level.
+                     Covering an area of 95768 sq. mts., this fort is located at a prominent geographic location 
+                     forming a triangle with the promontory of the fort at Cabo and Mormugao respectively. The 
+                     fort is surrounded by a dry moat from three sides, which are attached to the main land 
+                     measuring 6.5 mts in width, 5.20 mts in depth and is cut directly into the laterite hillock 
+                     and the laterite removed from it was used for the construction of the upper fort Aguada. 
+                     The fort consists of structures like the gun powder room, the house of the captain of fort, 
+                     the water tank and the lighthouse, which are covered with cell parapet wall. The two long 
+                     stairways originating from the seaside of the upper fort Aguada connect it to the 
+                     fortification of the lower fort Aguada. </p>
+
+                     <p><h2>The Water Tank</h2>
+
+                    This flat rectangular platform with small windows, in the encircled area of the parapet 
+                    wall is an underground water storage chamber / tank. The storage capacity of this water 
+                    tank is 2, 376,000 gallons. There are five divisions inside the tank with a support of 16 
+                    huge columns carved in the bed rock. A small staircase is provided at the entry gate to 
+                    descend. It was used for the storage of sweet water collected by the rain. The flat surface
+                     all around the tank was given a slope towards the inlets and small water ways were 
+                     provided for collecting the rain water. This water was then drained to the tank through 
+                     underground pipes in the lower fort tank which also had natural springs. This sweet water 
+                     so collected was supplied to the ships anchored at the bay through the pipes. This system 
+                     of drinking water supply at Fort Aguada holds a distinct place in the fort architecture 
+                     of India. The laterite quarried for both the cisterns was used for the construction of 
+                     the fortress.</p>
+
+                     <p><h2>The Lighthouse</h2>
+
+                    A flight of steps at the entrance leads to the top portion of the fort, where an open 
+                    flat square area is constructed. This open area connects the entry to the light house 
+                    and the parapet wall. The light house is round in shape, having circular steps to 
+                    reach on top. The lighthouse tapers upwards, measures 10 mts tall, and has a diameter 
+                    of 12 mts. The exact date of the construction of this light house is not known but it was 
+                    likely built with the fort itself. Initially, it emitted light once in seven minutes, later 
+                    it was updated to emit light in alternating 30 second intervals. However, it was abandoned 
+                    in 1976 when the new lighthouse was built nearby.</p>
+
+                    <p><h2>Lower Fort, Aguada</h2>
+
+                    The fortification wall of laterite stone at lower fort Aguada measures 570 meters in the north 
+                    section, 950 meters towards north–west section, 1411 meters. in the north–east, 80 meters. 
+                    in the west section and 1851 meters. in south section respectively.The North West section 
+                    admeasuring 950 meters approximately, is under the protection of ASI Goa Circle. 
+                    The approximate length of the fortification wall in total is 4862 meters that exists as per 
+                    the above directions. There are nine strategically placed bastions at different intervals. 
+                    There is an extended bastion, likely built in 1635, in a circular shape, and joined to 
+                    land by a short causeway. It was named the Queen Maria bastion following the tradition to 
+                    name all the bastions of the Aguada Fort. The two long stairways originating from the sea 
+                    side of the upper fort Aguada connect it to the fortification of the Lower Fort Aguada or 
+                    “Praca da Santa Catharina”. This area was used for storing fresh water and the residence 
+                    for the officers were also constructed nearby. Later on, this area was adapted as a jail 
+                    for the prisoners during Portuguese regime and renowned freedom fighters of Goa were 
+                    imprisoned there.</p>"
+            data-hi="<p>
+                <h2>उपरी किला, अग्वाड़ा</h2>
+                    वर्ष 1510 C.E. में, पुर्तगाली सेनापति अफोंसो डी अल्बुकर्क ने अपने प्राकृतिक बंदरगाहों और नदियों के साथ गोवा 
+                    (पुराने गोवा) शहर को बीजापुर के सुल्तान इस्माईल आदिलशाह (1510 C.E. – 1534 C.E.) से जीत लिया, 
+                    जिससे पुर्तगालियों के शासन को सुदृढ़ता मिली। गोवा में पुर्तगाली शासन की स्थापना के साथ ही, पुर्तगालियों को 
+                    फ्रांसीसी, डच और अंग्रेजों जैसे अन्य यूरोपीय आक्रमणकारियों के विरोध का सामना करना पड़ा। डच, जिन्होंने वर्ष 1599 
+                    C.E. में भारत आना शुरू किया, गोवा में पुर्तगाली उपनिवेश के लिए बड़ा खतरा बन गए। अतः मंडोवी नदी के मुहाने 
+                    पर निगरानी रखने के लिए यहाँ एक सुदृढ़ किले के निर्माण की आवश्यकता थी। इसलिए, अग्वादा पठार के चारों ओर 
+                    एक व्यापक परिधि वाला किला वर्ष 1612 C.E. में राज्यपाल रूय लौरेंको डे तवोरा (1609 C.E. – 1612 C.E.) के 
+                    कार्यकाल में निर्मित किया गया। पुर्तगाली भाषा में किले का नाम “अग्वाड़ा” था जिसका अर्थ है “पानी का स्थान”। ऊपरी 
+                    तथा निचला दो खंडों में निर्मित इस किले के ऊपरी भाग को “फोर्टालेज़ा रेआल” यानि शाही किले के रूप में जाना 
+                    जाता था, जबकि निचले किले को ”प्राका दा सांता काथारीना” के नाम से जाना गया।<br>
+                    
+                    एक तारे की तरह आकार का, ऊपरी किला अग्वाड़ा समुद्र तल से 260 फीट की ऊंचाई पर स्थित है। 95,768 
+                        वर्ग मीटर के क्षेत्र में फैला हुआ यह किला एक प्रमुख भौगोलिक स्थान पर स्थित है, जो क्रमशः काबो और मुर्मगाव 
+                        के किलों के क्षेत्र के साथ भौगोलिक दृष्टी से एक त्रिकोण का निर्माण करता है। किला सुरक्षा की दृष्टी से तीन तरफ 
+                        से एक सूखी खाई से घिरा हुआ है, जो मुख्य भूमि से जुड़ी हुई है, जिसकी चौड़ाई 6.5 मीटर है, गहराई 5.20 
+                        मीटर है और इस खाई को सीधे लेटराईट पहाड़ी में काटा गया है, और जो बड़े लेटराईट पत्थर निकाले गए उन 
+                        पत्थरों का उपयोग दुर्ग निर्माण के लिए किया गया। किले के अन्य मुख्य संरचनाओं में  बारूद कक्ष, किले के 
+                        कप्तान का घर, पानी की टंकी और प्रकाशघर आदि हैं, जो कक्षनुमा  दीवार से  घिरी हुई है, दीवार के नीचे 
+                        छोटे छोटे कक्ष निर्मित है। ऊपरी किले अग्वाड़ा से निकलने वाली दो लंबी दीवारें इसे निचले किले अग्वाड़ा की 
+                        किलेबंदी से जोड़ती हैं।</p>
+
+                    <p><h2>पानी की टंकी</h2>
+                        उपरी अग्वाड़ा किले के भीतर मैदान में एक आयताकार चबूतरा स्थित है, जिस पर निश्चित अंतर पर छोटी खिड़कियाँ
+                         बनाई गई हैं| यह चबूतरा वास्तव में ज़मीन के नीचे बनी पानी की टंकी की छत है| 23,76,000 गैंलन पानी के 
+                         संचयन की क्षमता होने वाली इस टंकी में  प्राचीन काल में पीने योग्य पानी का संचयन किया जाता था| इस टंकी 
+                         को 16 खम्बों की मदद से 5 हिस्सों में विभाजित किया गया है| इन स्तंभों का निर्माण बैड रॉक को काट कर 
+                         किया गया है| प्रवेश द्वार एवं छोटी सीढ़ी की योजना भी की गई है| इस टंकी में बरसात के जल का संचयन 
+                         किया जाता था| चबूतरे के ऊपर बहारी सतह को चारों ओर से ढलान का रूप देकर बरसात के पानी को इस 
+                         टंकी में  एकत्रित किया जाता था| इस तरह से एकत्रित किये गए पानी को भूमिगत पाईपों द्वारा निचले अग्वाडा 
+                         किले में स्थित जलस्त्रोतों में भर दिया जाता था, जिन में नैसर्गिक स्त्रोतों से भी पानी उपलब्ध कराया जाता था| 
+                         अंत में इस पीने योग्य जल को पाईपों द्वारा बंदरगाह में रुके हुए जहाजों में भरा जाता था| अग्वाड़ा किले पर 
+                         बनी हुई यह जल आपूर्ति प्रबंधन व्यवस्था भारत के दुर्ग स्थापत्य में अपना विशेष स्थान रखती है| इन जलस्त्रोतों के 
+                         निर्माण से निकली हुई लेटराईट की चट्टानों का उपयोग किलें के निर्माण में किया गया।</p>
+                         
+                    <p><h2>प्रकाश घर</h2>
+                    किले के प्रवेशद्वार से भीतर प्रवेश करने पर ठीक सामने बनी सीढियों से किले के उपरी भाग तक पहुँचा जा सकता है| 
+                    जहाँ पर एक खुला समतल भाग निर्मित है। इस खुले भाग से प्रकाश स्तम्भ तथा किले की ऊपरी दीवार तक पहुँचा जा 
+                    सकता है। प्रकाशघर आकार मे गोलाकार है, जिसके अंदर इसके ऊपरी भाग पर जाने के लिए वृताकार सीढ़ियों का 
+                    प्रावधान है। प्रकाश घर ऊपर की ओर अपेक्षाकृत पतला है जो 10 मीटर ऊँचा है तथा इसका व्यास 12 मीटर है। 
+                    आरंभ में हर सात मिनिटों में एक बार इस प्रकार इस प्रकाशघर से रौशनी द्वारा सूचना दी जाती थी| कुछ सालों बाद 
+                    इस अंतर को 7 मिनिटों से घटाकर 30 सेकंड्स कर दिया गया| सन 1976 में किले के पास नए लाइट हाउस के 
+                    निर्माण के बाद, किले में स्थित इस प्रकाशघर का उपयोग बंद कर दिया गया।</p>
+
+                    <p><h2>निचला किला, अग्वाड़ा</h2>
+                    निचला किला, अग्वाड़ा की लेटराईट पत्थर से बनी दीवार की कुल लम्बाई उत्तर की तरफ 570 मीटर, उत्तर–पश्चिम 
+                    खण्ड में 950 मीटर, उत्तर–पूर्व खण्ड में 1411 मीटर एवं पश्चिम सेक्शन की लम्बाई 80 मीटर तथा दक्षिण खंड की लम्बाई 
+                    1851 मीटर। उपरोक्त दिशाओं के अनुसार, कुल लंबाई लगभग 4862 मीटर है। किले की दिवार पर अलग अलग 
+                    अंतराल पर सुरक्षा के रूप में सात बुर्ज हैं। यहाँ लगभग 1635 में अर्धवृत्ताकार में बनाया गया एक बुर्ज है, जो एक 
+                    छोटे से मार्ग से भूमि से जुड़ा हुआ है। अग्वाड़ा किले के सभी बुर्जों का नाम रखने की परंपरा के बाद इसे क्वीन मारिया 
+                    बुर्ज का नाम दिया गया। ऊपरी किला अग्वाड़ा से निकलने वाली दो लंबी सीढ़ियों से निचले अग्वाड़ा किले (यानि “प्राका 
+                    दा सांता काथारिना”) को उपरी अग्वाड़ा किले (“फोर्टालेज़ा रेआल”)से जोड़ा गया है। इस क्षेत्र का उपयोग शुद्ध पानी के 
+                    भंडारण और अधिकारियों के निवास निर्माण हेतु किया गया था। बाद में पुर्तगाली शासन के दौरान इस क्षेत्र को कैदियों के 
+                    लिए एक जेल के रूप में उपयोग में लाया गया और गोवा के प्रसिद्ध स्वतंत्रता सैनानियों को यहाँ कैद किया गया।</p>"
+            data-kok="<p>
+                        <h2>वयलो किल्लो, आग्वाद</h2>
+                        1510 वर्सा आफोंस दे आल्बुकॅर हाणें बिजापुराचे सुलतान इस्माईल आदिलशहा (1510-1534) हाका हारोवन गोंयची सैमीक 
+                        बंदरां आनी येरादारी करपा योग्य न्हंयां सयत गोंय शार (पोरणें गोंय) जिखलें.  गोंयांत तांचो घट्ट जम बसले उपरांत पुर्तुगेजांक फ्रॅन्च, 
+                        डच आनी ब्रिटीशहांचे सारकिल्ल्या युरोपी आक्रमणकर्त्यांच्या विरोधाक चड तोंड दिवचें पडलें. 1599 वर्सा भारतांत येवपाक सुरवात केल्ल्या 
+                        डचांक लागून गोंयच्या पुर्तुगेज वसाहती खातीर व्हड धोको निर्माण जालो. ताका लागून कडक नदर दवरपा खातीर मांडवी न्हंयचे मुखाचेर 
+                        किल्लो बांदप गरजेचें जालें. देखून 1612 वर्सा गव्हर्नर रूय लॉरेन्स दे तावोरा (1609-1612) हांच्या कार्यकाळांत आग्वाद पठारा भोंवतणी 
+                        विस्तारीत परिघ आशिल्लो किल्लो बांदलो.<br>
+
+                        ताका 'आग्वाद' अशें नांव दिलें, जाचो पुर्तुगेज भाशेंत 'उदकाची सुवात’ असो अर्थ जाता. तो वयलो आनी सकयलो अशा दोन विभागांनी बांदलो. 
+                        वयल्या आग्वाद किल्ल्याक 'फोर्तालिझा रियल' म्हणल्यार 'शाही किल्लो' अशें म्हणटाले, जाल्यार सकयल्या आग्वादाक 'प्रासा दा सांता काथारीन' 
+                        अशें म्हणटाले. नखेत्राचो आकार आशिल्लो वयलो आग्वाद किल्लो दर्यापातळे सावन 260 फूट उंचायेचेर आसा. 95768 चौ. मी. वाठारांत पातळिल्लो 
+                        हो किल्लो एका मुखेल भुगोलीक सुवातेर आसा आनी अनुक्रमान काबो आनी मुरगांव हांगाच्या किल्ल्यांच्या मुखामळाचो त्रिकोण तयार करता. ह्या किल्ल्या 
+                        भोंवतणी तीन वटांनी सुको खंदक आसा, जो 6.5 मिटर रुंदाय, 5.20 मिटर खोलायेन मुखेल जमनीक जोडला आनी थेट चिर्‍या फातराच्या दोंगुल्ल्यांनी 
+                        कापला आनी तातूंतल्यान काडिल्ल्या चिर्‍यांचो वापर वयलो आग्वाद किल्लो बांदपा खातीर केल्लो. ह्या किल्ल्यांत गन पावडर रूम, किल्ल्याच्या 
+                        कॅप्टनाचें घर, उदकाची टांकी आनी दीपगृह अश्यो बांदावळी आसात, ज्यो सेल पॅरापेट वणटीन धांपिल्ल्यो आसात. आग्वादच्या वयल्या किल्ल्याच्या दर्या देगे 
+                        वयल्यान सुरू जावपी दोन लांब सोंपणां, ताका आग्वादच्या सकयल्या किल्ल्याच्या तटबंदी कडेन जोडटात.</p>
+                        
+                        <p><h2>उदकाची टांकी</h2>
+                          ल्हान जनेलां आशिल्लो हो सपाट आयताकृती प्लॅटफॉर्म, पॅरापेट वण्टीच्या घेरिल्ल्या वाठारांत भुमीगत उदक सांठोवपाचो कक्ष/टांकी आसा. ह्या उदका 
+                          टांकयेची सांठोवपाची तांक 2,376,000 गॅलन इतली आसा. तळशीळेच्या खडपांत कोरांतिल्ल्या 16 व्हड खांब्यांच्या आदारान टांकये भितर पांच विभाग 
+                          आसात. देंवपा खातीर प्रवेश दारार ल्हान सोंपणां दवरल्यांत. पावसांतल्यान एकठांय जावपी सावें उदक सांठोवपा खातीर ताचो वापर जातालो. 
+                          टांकये भोंवतणच्या सपाट पृश्ठभागाक प्रवेश मार्गा वटेन देंवती दिल्ली आनी पावसाचें उदक एकठांय करपा खातीर ल्हान उदकाचे मार्ग तयार 
+                          केल्ले. उपरांत हें उदक सकयल्या किल्ल्याचे टांकयेंतल्या भुमीगत पायपांतल्यान टांकयेंत व्हांवतालें, जाका तातूंत सैमीक झरे लेगीत आशिल्ले. 
+                          अशे तरेन एकठांय केल्लें हें सावें उदक, खाडयेंत नांगरिल्ल्या तारवांक पायपांतल्यान पुरवण करताले. आग्वाद किल्ल्याच्या पिवपाच्या उदकाचे 
+                          पुरवण वेवस्थेक भारताच्या किल्ल्यांच्या वास्तुशिल्पांत एक वेगळें स्थान आसा. दोनूय कुंडां खातीर खणिल्ले चिरे, किल्लो बांदपा खातीर वापरिल्ले.</p>
+
+                          <p><h2>दीपगृह</h2>
+                            प्रवेशदारा वयलीं सोंपणां किल्ल्याचो उक्तो सपाट चौकोनी वाठार बांदिल्ल्या वयल्या भागांत व्हरतात. हो उक्तो वाठार प्रवेशाक दीपगृह (लायट हाउस)  
+                            आनी पॅरापेट वण्टीक जोडटा. लायट हावज गोल आकाराचें आसा, जातूंत वयर पावपा खातीर गोलाकार सोंपणां आसात. दीपगृह वयले वटेन निमुळतें 
+                            आसा जें 10 मिटर उंचायेर आसा आनी ताचो व्यास 12 मिटर इतलो आसा. दीपगृह बांदपाची नेमकी तारीख कळना पूण हो किल्लो बांदिल्लो, तेन्नाच 
+                            तें बांदिल्लें आसूं येता. सुरवेक तो सात मिण्टांनी एक फावट उजवाड सोडटालो, उपरांत ताका वळेरेन 30 सॅकण्ड्सांच्या अंतरान उजवाड सोडपाक अद्यावत 
+                            केलो. पूण 1976 वर्सा लागींच नवो दीपगृह बांदतकूच ताचो वापर बंद केलो.</p>
+
+                            <p><h2>सकयल्या किल्ल्या, आग्वाद</h2>
+                              सकयल्या किल्ल्या अगुआडा हांगाच्या लॅटरायट फातराची किल्ल्याची वण्टी उत्तर विभागांत ५७० मी., उत्तर – अस्तंत विभागांत ९५० मी., १४११ मी. उत्तर – उदेंतेक
+                               ८० मी. अस्तंत विभागांत आनी1851 मी. अनुक्रमान दक्षिण विभागांत.सुमार ९५० मी. किल्ल्याच्या वण्टीची वट्ट लांबाय अदमासाक ४८६२ मी.टी. वेगवेगळ्या अंतराचेर 
+                               रणनितीन दवरिल्ले णव गढ आसात. हांगा एक विस्तारीत कोट आसा, तो १६३५ वर्सा बांदिल्लो आसूं येता, तो वाटकुळ्या आकाराचो आनी तो 
+                               ल्हानसो कॉजवे वरवीं जमनीचेर जोडला. आग्वाडा किल्ल्याच्या सगळ्या गढांक नांव दिवपाचे परंपरे प्रमाण ताका क्वीन मारिया किल्ल्याचें नांव दिलें. 
+                               वयल्या किल्ल्याच्या आगुआडाच्या दर्या वटेनच्यान सुरू जाल्लीं दोन लांब सोपणां ताका सकयल्या किल्ल्याच्या आग्वाडाच्या किल्ल्याक वा “प्राका दा सांता कॅथरीन” 
+                               कडेन जोडटात. हो वाठार गोड उदक सांठोवपा खातीर वापरताले आनी लागीं लागीं अधिकाऱ्यां खातीर राबितोय बांदताले. उपरांत पोर्तुगेज राजवटींत हो वाठार 
+                               कैद्यांखातीर बंदखण म्हूण रुपांतरीत करून गोंयचे नामनेचे सुटके झुजारी थंय बंदखणींत दवरले.</p>"
+          ></div>
+
+          <div class="small-button-group">
+            <button
+              class="small-btn"
+              onclick="showSection('referencesSection')"
+            >
+              References
+            </button>
+          </div>
+        </section>
+        <section
+          id="referencesSection"
+          class="tab-content"
+          style="display: none"
+        >
+          <p>
+            1. Fonseca, J. N. (1878). An historical and archaeological sketch of
+            the City of Goa, preceded by a short statistical account of the
+            territory of Goa, written by the authorization of the government, by
+            josé Nicolau da Fonseca .. Thacker.
+			</p>
+          <p>
+            2. Mendes, A. L. (1886, January 1). A India portugueza; Breve
+            descripção Das possessões Portuguezas na Asia, dividida em dois
+            volumes. publicada por Ordem do Ministerio da Marinha Internet
+            Archive. Retrieved February 1, 2023, from https://archive.org/details/<br>indiaportuguezab01lopeuoft
+          </p>
+          <p>
+            3. Pinho Lopes, N. M. de. (2017). O Sistema Defensivo De Goa
+            (1510-1660) Influência Na Composição Do Território Contemporâneo
+            (dissertation).
+          </p>
+          <p>
+            4. Shirodkar P. P., Fortresses and Forts of Goa, Directorate of Art
+            and Culture, Govt.of Goa, 2015
+          </p>
+        </section>
+
+        <!-- Brochure Section -->
+        <!--<section id="pdfSection" class="tab-content" style="display: none">
+                    <a href="#nil" target="_blank" class="view-pdf-btn">
+            View Brochure
+          </a>
+                </section>-->
+
+        <!-- Gallery Section -->
+        <section id="gallerySection" class="tab-content" style="display: none">
+          <img
+            src="Image_Fort_Aguada/2.webp"
+            class="gallery-img"
+            alt="Gallery image 1"
+          />
+          <img
+            src="Image_Fort_Aguada/3.webp"
+            class="gallery-img"
+            alt="Gallery image 2"
+          />
+        </section>
+
+        <!-- Lightbox For Gallery Section -->
+        <div id="lightbox" class="lightbox" aria-hidden="true">
+          <button class="lb-close" type="button" aria-label="Close">
+            &times;
+          </button>
+
+          <button
+            class="lb-nav lb-prev"
+            type="button"
+            aria-label="Previous image"
+          >
+            &#10094;
+          </button>
+
+          <img id="lightboxImg" class="lb-img" src="" alt="" />
+
+          <button class="lb-nav lb-next" type="button" aria-label="Next image">
+            &#10095;
+          </button>
+
+          <div class="lb-caption">
+            <span id="lbCount"></span>
+          </div>
+        </div>
+
+        <!-- Videos Section -->
+        <section id="videoSection" class="tab-content" style="display: none">
+          <!-- English Video -->
+          <div class="video-wrapper lang-video" data-lang="en">
+            <iframe
+              src="https://www.youtube.com/embed/IZ_ZPOHEAns"
+              title="English Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- Hindi Video -->
+          <div
+            class="video-wrapper lang-video"
+            data-lang="hi"
+            style="display: none"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/US6tMvzWs-c"
+              title="Hindi Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- Konkani Video -->
+          <div
+            class="video-wrapper lang-video"
+            data-lang="kok"
+            style="display: none"
+          >
+            <iframe
+              src="https://www.youtube.com/embed/b5ETjNz06mw"
+              title="Konkani Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+			<div class="lang" data-en="<h2>Video with supportive Sign Language</h2>"></div>
+        </section>
+
+        <!--Audio Section-->
+        <!--<section id="audioSection" class="tab-content" style="display: none">
+          <audio
+            id="audio-en"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source src="Audio English Link" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+
+          <audio
+            id="audio-hi"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source
+              src="Audio Hindi Link"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+
+          <audio
+            id="audio-kok"
+            class="audio-lang"
+            controls
+            controlsList="nodownload noplaybackrate"
+            oncontextmenu="return false;"
+          >
+            <source src="Audio Konkani Link" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </section>-->
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+          <div class="footer-left">
+            <img
+              src="Image_Fort_Aguada/asi_logo.jpg"
+              alt="ASI Logo"
+              class="asi-footer-logo"
+            />
+          </div>
+          <p
+            class="lang"
+            data-en="© Superintending Archaeologist, ASI Goa Circle | All Rights Reserved"
+            data-hi="© अधीक्षण पुरातत्वविद्, भारतीय पुरातत्व सर्वेक्षण, गोवा मंडल | सर्वाधिकार सुरक्षित"
+            data-kok="© अधीक्षण पुरातत्वविद्, भारतीय पुरातत्व सर्वेक्षण, गोंय मंडळ | सर्व हक्क राखीव"
+          >
+            © Superintending Archaeologist, ASI Goa Circle | All Rights Reserved
+          </p>
+        </footer>
+      </div>
+      <!-- parchment-container end -->
+    </div>
+    <!-- page-background end -->
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>
