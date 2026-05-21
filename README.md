@@ -1,5 +1,5 @@
 # asiqrinfo.in
-Domain Name "www.asiqrinfo.in" for designing, development and hosting QR Codes for Archaeological Survey of India for various heritage structures and monuments of India. Codes and their assets were designed purely by me with the help of AI Prompting using ChatGPT as per the department's request for its design.
+Domain Name "www.asiqrinfo.in" for designing, development and hosting QR Codes for Archaeological Survey of India in respect to the order recieved by SoftTech Company for various heritage structures and monuments of India. Codes and their assets for QR Codes and their responsive web pages were designed purely by © Ashish Bindal with the help of AI Prompting using ChatGPT as per the A.S.I department's request for their design.
 ## Copyright & Licensing
 © Ashish Bindal 
 - This project and its associated heritage QR presentation system, designs, monument layouts, UI elements, and content are protected under : a) GNU GPL v3.0 (for source code). b) CC BY-NC-SA 4.0 (for creative assets and design elements).
