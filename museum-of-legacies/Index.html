@@ -1,0 +1,121 @@
+<!--ASI Heritage QR System Copyright © Ashish Bindal Licensed under GPL v3-->
+<!--Copyright Reserved by SoftTech-->
+<!--Code Designed by © Ashish Bindal on 25/03/2026-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museum of Legacies, Jaipur</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Site Icon-->
+    <link rel="icon" href="Images_Museum_Legacies/ASI_Museum.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="Images_Museum_Legacies/ASI_Museum.jpg" type="image/x-icon" />
+  </head>
+
+  <body>
+
+<div class="page-wrapper">   <!-- NEW OUTER MARGIN -->
+
+  <div class="site-container">
+
+    <header class="topbar">
+      <nav class="tabs tabs--main">
+        <button class="tab is-active" data-view="english">English</button>
+        <button class="tab" data-view="hindi">Hindi</button>
+        <button class="tab" data-view="gallery">Gallery</button>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="page">
+      <section class="card">
+        <!-- ASI STYLE IMAGE SLIDER (independent of language switching) -->
+  <div class="slider-container" aria-label="Image slider">
+    <div class="asi-slider">
+      <div class="slide fade">
+        <img src="Images_Museum_Legacies/1.png" alt="banner 1" />
+      </div>
+      <div class="slide fade">
+        <img src="Images_Museum_Legacies/3.jpeg" alt="banner 3" />
+      </div>
+
+      <!-- Next / Prev Arrows -->
+      <button class="prev" type="button" aria-label="Previous slide">❮</button>
+      <button class="next" type="button" aria-label="Next slide">❯</button>
+    </div>
+
+    <!-- Dots -->
+    <div class="slider-dots" aria-label="Slider dots">
+      <button class="dot" type="button" aria-label="Go to slide 1"></button>
+      <button class="dot" type="button" aria-label="Go to slide 2"></button>
+    </div>
+  </div>
+  <!--Site Title-->
+        <h1 id="pageTitle" class="title">Museum of Legacies, Jaipur</h1>
+
+        <section id="langSection">
+  <!-- AUDIO BAR (changes per language) -->
+  <div class="audio-shell">
+    <audio id="audioPlayer" controls preload="metadata">
+      <source id="audioSource" src="Audio_Museum_Legacies/Museum_Legacies_Audio_English.mpeg" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <article id="textContent" class="content"></article>
+</section>
+
+        <!-- Gallery Section -->
+<section id="gallerySection" class="gallery" style="display:none">
+  <div class="gallery-grid">
+    <img src="Images_Museum_Legacies/5.jpeg" class="gallery-img" alt="Gallery image 1" />
+    <img src="Images_Museum_Legacies/1.png" class="gallery-img" alt="Gallery image 2" />
+    <img src="Images_Museum_Legacies/2.jpeg" class="gallery-img" alt="Gallery image 3" />
+    <img src="Images_Museum_Legacies/3.jpeg" class="gallery-img" alt="Gallery image 4" />
+  </div>
+</section>
+
+<!-- Lightbox For Gallery Section -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lb-close" type="button" aria-label="Close">&times;</button>
+
+  <button class="lb-nav lb-prev" type="button" aria-label="Previous image">
+    &#10094;
+  </button>
+
+  <img id="lightboxImg" class="lb-img" src="" alt="" />
+
+  <button class="lb-nav lb-next" type="button" aria-label="Next image">
+    &#10095;
+  </button>
+
+  <div class="lb-caption">
+    <span id="lbCount"></span>
+  </div>
+</div>
+
+      
+
+     <!-- FOOTER -->
+        <footer class="site-footer">
+          <div class="footer-left">
+            <img
+              src="Images_Museum_Legacies/4.png"
+              alt="ASI Logo"
+              class="asi-footer-logo"
+            />
+          </div>
+            © Department of Archaeology and Museums, Rajasthan | All Rights Reserved
+          </p>
+        </footer>
+
+        </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
